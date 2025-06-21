@@ -1,0 +1,42 @@
+08:08:58.959 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+08:08:58.960 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+08:08:59.252 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+08:08:59.253 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\browserstack-tests\browserstack.yml
+08:08:59.315 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+08:09:00.098 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to cucumber-testng
+08:09:00.101 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 7127b4e1-4919-4839-917a-f9eed67ade76
+08:09:00.102 [main] INFO  c.b.config.BrowserStackConfig - INFO
+08:09:00.139 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+08:09:00.143 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+08:09:01.189 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+08:09:01.218 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=cucumber-testng
+08:09:04.548 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+08:09:05.504 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: inzk6rkjf8gu27adgzr7ya9ridluoiydwmfmknso
+08:09:05.504 [main] INFO  c.b.config.BrowserStackConfig - INFO
+08:09:05.516 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+08:09:05.811 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+08:09:05.811 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+08:09:12.320 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+08:09:31.913 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/inzk6rkjf8gu27adgzr7ya9ridluoiydwmfmknso to view build report, insights, and many more debugging information all at one place!
+
+08:09:31.914 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+08:09:31.917 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+08:09:34.494 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\browserstack-tests\browserstack.yml
+08:09:34.494 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\browserstack-tests\browserstack.yml
+08:09:35.509 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/a8f8406a6d0108f6cb336977cf42c5fb6dae0efa
+08:09:35.509 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+08:09:35.525 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 7127b4e1-4919-4839-917a-f9eed67ade76, testhub id: inzk6rkjf8gu27adgzr7ya9ridluoiydwmfmknso
+08:09:35.525 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO

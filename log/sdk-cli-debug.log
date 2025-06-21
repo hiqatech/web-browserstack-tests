@@ -1,0 +1,10 @@
+2025-06-21T06:09:00.443Z CLI debug [testhub:service]     loaded module: _0x846cd6
+2025-06-21T06:09:00.444Z CLI debug [instrumentation:service]     loaded module: instrumentation:module
+2025-06-21T06:09:00.444Z CLI debug [observability:service]     loaded module: observability:module
+2025-06-21T06:09:00.444Z CLI debug [accessibility:service]     loaded module: accessibility:module
+2025-06-21T06:09:00.445Z CLI debug [ai:service]     loaded module: _0x1ace72
+2025-06-21T06:09:00.445Z CLI debug [percy:service]     loaded module: _0x5d817a
+2025-06-21T06:09:00.446Z CLI debug [local:service]     loaded module: _0x5b26eb
+2025-06-21T06:09:00.446Z CLI debug [appautomate:service]     loaded module: appautomate:module
+2025-06-21T06:09:00.507Z CLI debug [main]     Starting main function execution
+2025-06-21T06:09:00.509Z CLI debug [main]     Executing CLI

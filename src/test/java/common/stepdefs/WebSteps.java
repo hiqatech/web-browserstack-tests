@@ -126,12 +126,6 @@ public class WebSteps {
         AssertExecutedStep( WebHelp.uploadFileWithKey(fileName) + " : " + "I upload the " + fileName + " file to the " + elementName);
     }
 
-    @Given("I rename the {string} file to the {string}")
-    public static void IRenameFileTo(String fileName, String textX) {
-        String newName = UtilHelp.getStoredText(textX);
-        AssertExecutedStep( FileHelp.renameFile(fileName, newName) + " : " + "I rename the " + fileName + " file to the " + newName);
-    }
-
     @Given("I delete the {string} from the {string}")
     public static void IDeleteFileFromThe(String fileName, String path) {
         if(path.contains("Downloads")) {

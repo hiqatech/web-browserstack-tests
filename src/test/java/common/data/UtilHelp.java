@@ -1,8 +1,5 @@
 package common.data;
 
-import java.beans.XMLEncoder;
-import java.io.File;
-import java.io.FileInputStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
@@ -11,12 +8,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-
-import org.apache.commons.io.output.ByteArrayOutputStream;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class UtilHelp {
 
@@ -28,41 +19,9 @@ public class UtilHelp {
 	        return timeStamp;
 	    }
 
-	public static String readTestData(String featureFileName, String sheetName, String testId){
-		try {
-	        File file = new File(System.getProperty("user.dir") + "\\src\\main\\resources\\templates\\" + featureFileName +"\\"+ featureFileName + ".xlsx");   //creating a new file instance
-	        FileInputStream fis = new FileInputStream(file);
-	        	XSSFWorkbook wb = new XSSFWorkbook(fis);
-				XSSFSheet sh = wb.getSheet(sheetName);
-				Row headers = sh.getRow(0);
-				int rown = Integer.valueOf(testId)+1;
-				Row testRow = sh.getRow(1);
-
-				for(int colIdx=0 ; colIdx < headers.getLastCellNum(); colIdx++) {
-				    Cell valueCell = testRow.getCell(colIdx);
-				    Cell keyCell = headers.getCell(colIdx);
-				    String key = keyCell.getStringCellValue().trim();
-				    String value = "";
-				    switch(valueCell.getCellType()) {
-		            case NUMERIC:
-		            	value = String.valueOf(valueCell.getNumericCellValue());break;
-		            case STRING:
-		            	value = valueCell.getStringCellValue().trim().toString();break;
-
-		        }
-				    testDataMap.put(key, value);
-				   }
-
-	        return "PASS : TestData = " + printMap(testDataMap);
-		}
-	    catch(Exception ex)
-	    {System.out.println(ex.toString()); return  ex.toString();}
-	}
-
 	public static String getTestData(String key){
 		return testDataMap.get(key);
 	}
-
 
     public static String prepText(String text){
         try
@@ -161,26 +120,6 @@ public class UtilHelp {
 
         return(sb.toString());
     }
-
-    public static String hashMapToXmlString(HashMap map){
-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        XMLEncoder xmlEncoder = new XMLEncoder(bos);
-        xmlEncoder.writeObject(map);
-        xmlEncoder.flush();
-
-        return bos.toString();
-    }
-
-    public static String hashMapToString(HashMap map){
-    ByteArrayOutputStream bos = new ByteArrayOutputStream();
-    XMLEncoder xmlEncoder = new XMLEncoder(bos);
-    xmlEncoder.writeObject(map);
-    xmlEncoder.flush();
-
-    String serializedMap = bos.toString();
-
-    return serializedMap;
-	}
 
     public static boolean onlyDigits(String str){
         for (int i = 0; i < str.length(); i++) {

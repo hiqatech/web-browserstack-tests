@@ -1,25 +1,10 @@
 package common.data;
 
-import static data.UtilHelp.storedTexts;
+import static common.data.UtilHelp.storedTexts;
 
 import java.io.File;
 
-import org.apache.commons.io.FileUtils;
-
 public class FileHelp {
-
-    public static String renameFile(String fileName, String newName)
-    {
-        try
-        {
-            File source = new File(System.getProperty("filePath") + fileName);
-            File destination = new File(System.getProperty("filePath") + newName);
-            FileUtils.copyFile(source, destination);
-            return "PASS";
-        }
-        catch(Exception ex)
-        {System.out.println(ex.toString()); return  ex.toString();}
-    }
 
     public static String checkDownLoad(String expectedName)
     {

@@ -1,118 +1,38 @@
 package common.selenium;
 
-import com.twilio.Twilio;
-import com.twilio.base.ResourceSet;
-import com.twilio.rest.api.v2010.account.Message;
-import common.setup.Hooks;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.Select;
-
-import java.awt.*;
+import java.awt.Robot;
+import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
-import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 
 public class WebHelp {
 
     public static WebDriver webDriver;
-    public static int waitTimeMax= 5000;
+    public static int waitTimeMax= 12000;
     public static int waitTime = 500;
     public static int timeOut = 60;
 
-    public static String startMyWebDriver(String driver)
-    {
+    public static String startMyWebDriver(String driver){
         try
         {
-            DesiredCapabilities capabilities ;
-            driver = driver.toUpperCase();
-            String driverPath = System.getProperty("driverPath");
 
-            switch(driver)
-            {
-
-                case "CHROME":
-                    String chromeDriverPath = driverPath + "chromedriver.exe";
-                    System.setProperty("webdriver.chrome.driver",chromeDriverPath);
-
-                    HashMap<String,Object> chromePrefs = new HashMap<String,Object>();
-                    chromePrefs.put("download.prompt_for_download",false);
-                    chromePrefs.put("download.default_directory",System.getProperty("downloadPath"));
-
-                    ChromeOptions options = new ChromeOptions();
-                    options.setExperimentalOption("prefs",chromePrefs);
-                    options.addArguments("--ssl-version-max=tls1");
-                    options.addArguments("--ignore-certificate-errors");
-                    options.addArguments("--disable-extensions");
-                    options.addArguments("--start-maximized");
-                    options.addArguments("--screenshot");
-
-                    //capabilities = DesiredCapabilities.chrome();
-                    //capabilities.setCapability("chrome.switches", Arrays.asList("--disable-extensions"));
-                    //capabilities.setCapability("chrome.switches", Arrays.asList("--ignore-certificate-errors"));
-                    //capabilities.setCapability("chrome.switches", Arrays.asList("--start-maximized"));
-                    //capabilities.setCapability("chrome.switches", Arrays.asList("--screenshots"));
-                    //capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
-                    //capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
-                    if(!System.getProperty("seleniumGrid").equalsIgnoreCase("LOCAL"))
-                        webDriver = new RemoteWebDriver(new URL(System.getProperty("seleniumGrid")),capabilities);
-                    else if(System.getProperty("seleniumGrid").equalsIgnoreCase("LOCAL"))
-                        webDriver = new ChromeDriver(options);
-                    else System.out.println("seleniumGrid" + " has not been defined.");
-
-                    break;
-
-                case "IE" :
-
-                    String ieDriverPath = driverPath + "IEDriverServer.exe";
-                    System.setProperty("webdriver.ie.driver",ieDriverPath);
-
-                    capabilities = DesiredCapabilities.internetExplorer();
-                    capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
-                    capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
-                    capabilities.setJavascriptEnabled(true);
-
-                    if(System.getProperty("runEnvironment").equalsIgnoreCase("REMOTE"))
-                        webDriver = new RemoteWebDriver(new URL(System.getProperty("seleniumGrid")),capabilities);
-                    else if(System.getProperty("runEnvironment").equalsIgnoreCase("LOCAL"))
-                        webDriver = new InternetExplorerDriver();
-                    else System.out.println(System.getProperty("runEnvironment") + " has not been defined yet.");
-
-                    break;
-
-                case "FIREFOX" :
-
-                    capabilities = DesiredCapabilities.firefox();
-                    String firefoxDriverPath = driverPath + "geckodriver.exe";
-                    System.setProperty("webdriver.gecko.driver",firefoxDriverPath);
-
-                    if(System.getProperty("runEnvironment").equalsIgnoreCase("REMOTE"))
-                        webDriver = new RemoteWebDriver(new URL(System.getProperty("seleniumGrid")),capabilities);
-                    else if(System.getProperty("runEnvironment").equalsIgnoreCase("LOCAL"))
-                        webDriver = new FirefoxDriver();
-                    else System.out.println(System.getProperty("runEnvironment") + " has not been defined yet.");
-
-                default :
-                    System.out.println("webDriver " + driver + " has not been defined yet");
-
-            }
+            MutableCapabilities capabilities = new MutableCapabilities();
+            HashMap<String, String> bstackOptions = new HashMap<>();
+            bstackOptions.putIfAbsent("source", "cucumber-java:sample-master:v1.2");
+            capabilities.setCapability("bstack:options", bstackOptions);
+            webDriver = new RemoteWebDriver(
+                    new URL("https://hub.browserstack.com/wd/hub"), capabilities);
 
             webDriver.manage().timeouts().pageLoadTimeout(timeOut,TimeUnit.SECONDS);
             webDriver.manage().timeouts().setScriptTimeout(timeOut,TimeUnit.SECONDS);
@@ -127,8 +47,7 @@ public class WebHelp {
 
     }
 
-    public static String stopMyWebDriver()
-    {
+    public static String stopMyWebDriver(){
         try
         {
             webDriver.close();
@@ -139,48 +58,58 @@ public class WebHelp {
         {return "NOTE : " + ex.toString();}
     }
 
-    public static String navigateTo(String URL)
-    {
+    public static String navigateTo(String URL){
         try
         {
-            if(!URL.isEmpty() && !URL.equalsIgnoreCase("") && !(URL == null))
-                webDriver.navigate().to(URL);
+            if(!URL.isEmpty() && !URL.equalsIgnoreCase("") && !(URL == null)) {
+				webDriver.navigate().to(URL);
+			} sleep(5000);
             return "PASS";
         }
         catch(Exception ex)
         {return  ex.toString();}
     }
 
-    public static Boolean verifyNotNull(String text)
-    {
-        if(!text.isEmpty() && !text.equalsIgnoreCase("") && !(text == null))
-        return true;
-        else return false;
+    public static String getCurrentURL(){
+        try
+        {
+            return webDriver.getCurrentUrl();
+        }
+        catch(Exception ex)
+        {return  ex.toString();}
     }
 
-    public static String isDisplayed(String elementSelector)
-    {
+    public static Boolean verifyNotNull(String text){
+        if(!text.isEmpty() && !text.equalsIgnoreCase("") && !(text == null)) {
+			return true;
+		} else {
+			return false;
+		}
+    }
+
+    public static String isDisplayed(String elementSelector){
         try
         {
             WebElement webElement  = getWebElement(elementSelector);
-            if(webElement.isDisplayed() || webElement.isEnabled())
-                return "PASS";
-            else if(webElement.isEnabled())
-                return "Element not displayed or hidden";
-            else return "ERROR";
+            if(webElement.isDisplayed() || webElement.isEnabled()) {
+				return "PASS";
+			} else if(webElement.isEnabled()) {
+				return "Element not displayed or hidden";
+			} else {
+				return "ERROR";
+			}
         }
         catch (Exception ex){
             return ex.toString();
         }
     }
 
-    public static WebElement getWebElement(String elementSelector)
-    {
+    public static WebElement getWebElement(String elementSelector){
+
         return webDriver.findElement(By.xpath(elementSelector));
     }
 
-    public static String sleep(int sleep)
-    {
+    public static String sleep(int sleep){
         try
         {
             Thread.sleep(sleep);
@@ -189,15 +118,15 @@ public class WebHelp {
         catch (Exception ex){return ex.toString();}
     }
 
-    public static String waitToAppear(String elementSelector)
-    {
+    public static String waitToAppear(String elementSelector){
         double startTime = 0;
+        sleep(500);
         while (startTime < waitTimeMax)
         {
             sleep(waitTime);
-            if(isDisplayed(elementSelector).equalsIgnoreCase("PASS"))
-                return  "PASS";
-            else
+            if(isDisplayed(elementSelector).equalsIgnoreCase("PASS")) {
+				return  "PASS";
+			} else
                 {
                     sleep(waitTime);
                     startTime = startTime + waitTime;
@@ -206,14 +135,13 @@ public class WebHelp {
         return isDisplayed(elementSelector);
     }
 
-    public static String waitToDisappear(String elementSelector)
-    {
+    public static String waitToDisappear(String elementSelector){
         double startTime = 0;
         while (startTime < waitTimeMax)
         {
-            if(!isDisplayed(elementSelector).equalsIgnoreCase("PASS"))
-                return  "PASS";
-            else
+            if(!isDisplayed(elementSelector).equalsIgnoreCase("PASS")) {
+				return  "PASS";
+			} else
             {
                 sleep(waitTime);
                 startTime = startTime + waitTime;
@@ -222,28 +150,42 @@ public class WebHelp {
         return "ERROR";
     }
 
-    public static String switchToFrame(String frameSelector)
-    {
+    public static Boolean checkElementVisibility(String elementSelector){
+        double startTime = 0;
+        while (startTime < 5000)
+        {
+            if(!isDisplayed(elementSelector).equalsIgnoreCase("PASS")) {
+				return true;
+			} else
+            {
+                sleep(waitTime);
+                startTime = startTime + waitTime;
+            }
+        }
+        return false;
+    }
+
+    public static String switchToFrame(String frameSelector){
         try
         {
             webDriver.switchTo().defaultContent();
-            if(frameSelector.equalsIgnoreCase("default"))
-                return "PASS";
+            if(frameSelector.equalsIgnoreCase("default")) {
+				return "PASS";
+			}
             if(verifyNotNull(frameSelector)) {
-                waitToAppear(frameSelector);
                 WebElement frame = webDriver.findElement(By.xpath(frameSelector));
                 webDriver.switchTo().frame(frame);
                 sleep(3000);
                 return "PASS";
-            }
-            else return "ERROR";
+            } else {
+				return "ERROR";
+			}
         }
         catch(Exception ex)
         {return  ex.toString();}
     }
 
-    public static String switchToFrameInFrame(String frameSelector1, String frameSelector2)
-    {
+    public static String switchToFrameInFrame(String frameSelector1, String frameSelector2){
         try
         {
             webDriver.switchTo().defaultContent();
@@ -252,23 +194,24 @@ public class WebHelp {
                 WebElement frame = webDriver.findElement(By.xpath(frameSelector1));
                 webDriver.switchTo().frame(frame);
                 sleep(2000);
-            }
-            else return "ERROR";
+            } else {
+				return "ERROR";
+			}
             if(verifyNotNull(frameSelector2)) {
                 waitToAppear(frameSelector2);
                 WebElement frame = webDriver.findElement(By.xpath(frameSelector2));
                 webDriver.switchTo().frame(frame);
                 sleep(2000);
                 return "PASS";
-            }
-            else return "ERROR";
+            } else {
+				return "ERROR";
+			}
         }
         catch(Exception ex)
         {return  ex.toString();}
     }
 
-    public static String switchToDefaultContent()
-    {
+    public static String switchToDefaultContent(){
         try
         {
             webDriver.switchTo().defaultContent();
@@ -278,11 +221,10 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String switchToWindow(int windowNumber)
-    {
+    public static String switchToWindow(int windowNumber){
         try
         {
-            ArrayList<String> tabs = new ArrayList<String>(webDriver.getWindowHandles());
+            ArrayList<String> tabs = new ArrayList<>(webDriver.getWindowHandles());
             webDriver.switchTo().window(tabs.get(windowNumber-1));
             return "PASS";
         }
@@ -290,8 +232,7 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String keyActions(String actionKey)
-    {
+    public static String keyActions(String actionKey){
         try
         {
             actionKey = actionKey.toUpperCase();
@@ -325,8 +266,7 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String sendKeys(String elementSelector, String actionKey)
-    {
+    public static String sendKeys(String elementSelector, String actionKey){
         try
         {
             actionKey = actionKey.toUpperCase();
@@ -361,8 +301,7 @@ public class WebHelp {
     }
 
 
-    public static String navigateToWithSendEnterKey(String URL, int thread1, int thread2)
-    {
+    public static String navigateToWithSendEnterKey(String URL, int thread1, int thread2){
         try
         {
             navigateTo(URL);
@@ -374,15 +313,15 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String handleAlert(String action)
-    {
+    public static String handleAlert(String action){
         try
         {
             action = action.toUpperCase();
-            if(action.equalsIgnoreCase("ACCEPT"))
-                webDriver.switchTo().alert().accept();
-            else if(action.equalsIgnoreCase("DISMISS"))
-                webDriver.switchTo().alert().dismiss();
+            if(action.equalsIgnoreCase("ACCEPT")) {
+				webDriver.switchTo().alert().accept();
+			} else if(action.equalsIgnoreCase("DISMISS")) {
+				webDriver.switchTo().alert().dismiss();
+			}
             return "PASS";
         }
         catch(Exception ex)
@@ -390,23 +329,22 @@ public class WebHelp {
     }
 
 
-    public static String browserAct(String elementName)
-    {
+    public static String browserAct(String elementName){
         try
         {
             elementName = elementName.toUpperCase();
-            if(elementName.contains("BACK"))
-                webDriver.navigate().back();
-            else if(elementName.equalsIgnoreCase("FORWARD"))
-                webDriver.navigate().forward();
+            if(elementName.contains("BACK")) {
+				webDriver.navigate().back();
+			} else if(elementName.equalsIgnoreCase("FORWARD")) {
+				webDriver.navigate().forward();
+			}
             return "PASS";
         }
         catch(Exception ex)
         {return  ex.toString();}
     }
 
-    public static String readTextOfWebElement(String elementSelector)
-    {
+    public static String readTextOfWebElement(String elementSelector){
         try
         {
             WebElement webElement = getWebElement(elementSelector);
@@ -416,8 +354,7 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String readAttributeOfWebElement(String elementSelector, String attribute)
-    {
+    public static String readAttributeOfWebElement(String elementSelector, String attribute){
         try
         {
             WebElement webElement = getWebElement(elementSelector);
@@ -427,24 +364,24 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String isChecked(String elementSelector, String status)
-    {
+    public static String isChecked(String elementSelector, String status){
         try
         {
             status = status.toUpperCase();
             WebElement webElement = getWebElement(elementSelector);
-            if(webElement.isSelected() && status.equalsIgnoreCase("CHECKED"))
-                return "PASS";
-            else if(!webElement.isSelected() && status.equalsIgnoreCase("UNCHECKED"))
-                return  "PASS";
-            else return "ERROR";
+            if(webElement.isSelected() && status.equalsIgnoreCase("CHECKED")) {
+				return "PASS";
+			} else if(!webElement.isSelected() && status.equalsIgnoreCase("UNCHECKED")) {
+				return  "PASS";
+			} else {
+				return "ERROR";
+			}
         }
         catch(Exception ex)
         {return  ex.toString();}
     }
 
-    public static String tryToSelect(WebElement webElement)
-    {
+    public static String tryToSelect(WebElement webElement){
         try
         {
             Actions actions = new Actions(webDriver);
@@ -455,8 +392,7 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String tryToClick(WebElement webElement)
-    {
+    public static String tryToClick(WebElement webElement){
         try
         {
             webElement.click();
@@ -465,7 +401,7 @@ public class WebHelp {
         catch(Exception ex)
         {
             if(ex.toString().contains("StaleElement")){
-                sleep(1000);
+                sleep(3000);
                 try {
                     webElement.click();
                     return "PASS";
@@ -476,8 +412,7 @@ public class WebHelp {
             return ex.toString();}
     }
 
-    public static String tryToHover(WebElement webElement)
-    {
+    public static String tryToHover(WebElement webElement){
         try
         {
             Actions actions = new Actions(webDriver);
@@ -488,8 +423,7 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String scrollAnd(String act, String elementSelector)
-    {
+    public static String scrollAnd(String act, String elementSelector){
         try
         {
             WebElement webElement = getWebElement(elementSelector);
@@ -497,22 +431,24 @@ public class WebHelp {
             {keyActions("PAGEUP");}
             String result = "";
             int trying = 0;
-            if(act.equalsIgnoreCase("CLICK"))
-                result = tryToClick(webElement);
-            else if(act.equalsIgnoreCase("SELECT"))
-                result = tryToSelect(webElement);
+            if(act.equalsIgnoreCase("CLICK")) {
+				result = tryToClick(webElement);
+			} else if(act.equalsIgnoreCase("SELECT")) {
+				result = tryToSelect(webElement);
+			}
             result = tryToClick(webElement);
             while(trying < 70)
             {
-                if(result.equalsIgnoreCase("PASS"))
-                    break;
-                else
+                if(result.equalsIgnoreCase("PASS")) {
+					break;
+				} else
                 {
                     keyActions("ARROWDOWN");
-                    if(act.equalsIgnoreCase("CLICK"))
-                        result = tryToClick(webElement);
-                    else if(act.equalsIgnoreCase("SELECT"))
-                        result = tryToSelect(webElement);
+                    if(act.equalsIgnoreCase("CLICK")) {
+						result = tryToClick(webElement);
+					} else if(act.equalsIgnoreCase("SELECT")) {
+						result = tryToSelect(webElement);
+					}
                     trying = trying + 1;
                 }
             }
@@ -523,31 +459,59 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String safeAct(String act, String elementSelector)
-    {
+    public static String safeAct(String act, String elementSelector){
+        try
+        {
+            WebElement webElement = getWebElement(elementSelector);
+
+            if(act.contains("hover") || act.equals("hover")) {
+				tryToHover(webElement);
+			}
+            if(act.contains("double")) {
+            	tryToClick(webElement); sleep(2000); }
+            if(act.contains("click") || act.equals("click")) {
+				return tryToClick(webElement);
+			} else if(act.contains("select")|| act.equals("select")) {
+				return tryToSelect(webElement);
+			} else if(act.contains("hit")|| act.equals("hit"))
+                {webElement.sendKeys(Keys.ENTER); return "PASS";}
+            else if(act.contains("clear")|| act.equals("clear"))
+            {webElement.clear(); return "PASS";}
+            else {System.out.println(act + " action has not been defined"); return  "FAIL";}
+        }
+        catch(Exception ex)
+        {return ex.toString();}
+    }
+
+    public static String checkBox(String act, String elementSelector){
         try
         {
             act = act.toUpperCase();
             WebElement webElement = getWebElement(elementSelector);
+            return tryTheBox(webElement,act);
+         }
+        catch(Exception ex)
+        {return  ex.toString();}
+    }
 
-            if(act.equalsIgnoreCase("HOVER"))
-                return tryToHover(webElement);
-            else if(act.equalsIgnoreCase("CLICK"))
-                return tryToClick(webElement);
-            else if(act.equalsIgnoreCase("SELECT"))
-                return tryToSelect(webElement);
-            else if(act.equalsIgnoreCase("HIT"))
-                {webElement.sendKeys(Keys.ENTER); return "PASS";}
-            else if(act.equalsIgnoreCase("CLEAR"))
-            {webElement.clear(); return "PASS";}
-            else {System.out.println(act + " action has not been defined"); return  "FAIL";}
+    public static String tryTheBox(WebElement webElement, String act){
+    	try
+        {
+    		if(act.equalsIgnoreCase("CHECK"))
+    			{if (!webElement.isSelected()) {
+					webElement.click();
+				} return "PASS"; }
+            else if(act.equalsIgnoreCase("UNCHECK"))
+            {if (webElement.isSelected()) {
+				webElement.click();
+			} return "PASS"; }
+			else {System.out.println(act + " action has not been defined"); return  "FAIL";}
         }
         catch(Exception ex)
         {return  ex.toString();}
     }
 
-    public static String sendEnterKey()
-    {
+    public static String sendEnterKey(){
         try
         { sleep(1000);
         Robot robot = new Robot();
@@ -561,8 +525,7 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String safeInto(String act, String elementSelector, String text)
-    {
+    public static String safeInto(String act, String elementSelector, String text){
         try
         {   if(act.equalsIgnoreCase("TYPE"))
             {
@@ -585,44 +548,25 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String takeScreenShot(String dest)
-    {
-        try
-        {
-            TakesScreenshot ts = (TakesScreenshot)webDriver;
-            File source = ts.getScreenshotAs(OutputType.FILE);
-            File destination = new File(dest + ".jpg");
-            FileUtils.copyFile(source,destination);
-
-            final byte[] screenshot = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
-            Hooks.scenario.attach(screenshot, "image/jpg");
-
-            return "PASS";
-        }
-        catch(Exception ex)
-        {return  ex.toString();}
-    }
-
-    public static String selectFromDropDownBy(String elementSelector,String what, String text)
-    {
+    public static String selectFromDropDownBy(String elementSelector,String what, String text){
         try
         {
             WebElement webElement = getWebElement(elementSelector);
             Select select = new Select(webElement);
-            if(what.equalsIgnoreCase("text"))
-            select.selectByVisibleText(text);
-            else if(what.equalsIgnoreCase("index"))
-                select.selectByIndex(Integer.parseInt(text));
-            else if(what.equalsIgnoreCase("value"))
-                select.selectByValue(text);
+            if(what.equalsIgnoreCase("text")) {
+				select.selectByVisibleText(text);
+			} else if(what.equalsIgnoreCase("index")) {
+				select.selectByIndex(Integer.parseInt(text));
+			} else if(what.equalsIgnoreCase("value")) {
+				select.selectByValue(text);
+			}
             return "PASS";
         }
         catch(Exception ex)
         {return  ex.toString();}
     }
 
-    public static String clickFromDropDownBy(String dropdownSelector, String optionsSelector, String text, String attribute)
-    {
+    public static String clickFromDropDownBy(String dropdownSelector, String optionsSelector, String text, String attribute){
         try
         {
             safeAct("select", dropdownSelector);
@@ -632,12 +576,15 @@ public class WebHelp {
             for(WebElement option : options)
             {
                 String currenText = "null";
-                if(attribute.equalsIgnoreCase("text"))
-                    currenText = option.getText();
-                if(attribute.equalsIgnoreCase("value"))
-                    currenText = option.getAttribute("value");
-                if(attribute.equalsIgnoreCase("placeholder"))
-                    currenText = option.getAttribute("placeholder");
+                if(attribute.equalsIgnoreCase("text")) {
+					currenText = option.getText();
+				}
+                if(attribute.equalsIgnoreCase("value")) {
+					currenText = option.getAttribute("value");
+				}
+                if(attribute.equalsIgnoreCase("placeholder")) {
+					currenText = option.getAttribute("placeholder");
+				}
 
                 if(currenText.equalsIgnoreCase(text))
                 {
@@ -651,29 +598,30 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String isSelected(String elementSelector, String status)
-    {
+    public static String isSelected(String elementSelector, String status){
         try
         {
             status = status.toUpperCase();
             WebElement webElement = getWebElement(elementSelector);
-            if(status.equalsIgnoreCase("SELECTED"))
-                if(webElement.isSelected())
-                    return "PASS";
-                else return "FALSE";
-
-            else if(status.equalsIgnoreCase("UNSELECTED"))
-                if(!webElement.isSelected())
-                    return "PASS";
-                else return "FALSE";
-            else { System.out.println(status + " has not been defined");return "ERROR";}
+            if(status.equalsIgnoreCase("SELECTED")) {
+				if(webElement.isSelected()) {
+					return "PASS";
+				} else {
+					return "FALSE";
+				}
+			} else if(status.equalsIgnoreCase("UNSELECTED")) {
+				if(!webElement.isSelected()) {
+					return "PASS";
+				} else {
+					return "FALSE";
+				}
+			} else { System.out.println(status + " has not been defined");return "ERROR";}
         }
         catch(Exception ex)
         {return  ex.toString();}
     }
 
-    public static String uploadFileWithKey(String fileName)
-    {
+    public static String uploadFileWithKey(String fileName){
         try
         {
             //String path = System.getProperty("uploadPath") + fileName;
@@ -695,8 +643,7 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String uploadFile(String browserButtonSelector, String fileName)
-    {
+    public static String uploadFile(String browserButtonSelector, String fileName){
         try
         {
             String path = System.getProperty("uploadPath") + fileName;
@@ -707,8 +654,7 @@ public class WebHelp {
         {return  ex.toString();}
     }
 
-    public static String selectNthElement(String elementSelector , String index)
-    {
+    public static String selectNthElement(String elementSelector , String index){
         try
         {
           List<WebElement> list = webDriver.findElements(By.xpath(elementSelector));
@@ -718,21 +664,6 @@ public class WebHelp {
         catch(Exception ex)
         {return  ex.toString();}
     }
-
-    public static String receiveOTPNumber(String accountSID, String authToken, String phoneNumber){
-        try {
-            sleep(10000);
-            Twilio.init(accountSID,authToken);
-            ResourceSet<Message> messages = Message.reader(accountSID).read();
-            Stream<Message> messagesString = StreamSupport.stream(messages.spliterator(),false);
-            String smsBody = String.valueOf(messagesString.filter(m-> m.getDirection().compareTo(Message.Direction.INBOUND)==0).filter(m -> m.getTo().equalsIgnoreCase(phoneNumber)).map(Message::getBody).findFirst());
-            return smsBody.replaceAll("[^-?0-9]+","").substring(0,6);
-        }
-        catch(Exception ex)
-        {return  ex.toString();}
-    }
-
-
 
 
 }

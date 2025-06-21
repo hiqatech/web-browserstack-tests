@@ -2,7 +2,7 @@ package common.stepdefs;
 
 import common.pageobjects.HomePage;
 import io.cucumber.java.After;
-import io.cucumber.java.Before;
+
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,19 +18,9 @@ import java.util.HashMap;
 import org.testng.Assert;
 
 public class StackDemoSteps {
-    private WebDriver driver;
-    private HomePage homePage;
 
-    @Before
-    public void setUp() throws MalformedURLException {
-        MutableCapabilities capabilities = new MutableCapabilities();
-        HashMap<String, String> bstackOptions = new HashMap<>();
-        bstackOptions.putIfAbsent("source", "cucumber-java:sample-master:v1.2");
-        capabilities.setCapability("bstack:options", bstackOptions);
-        driver = new RemoteWebDriver(
-                new URL("https://hub.browserstack.com/wd/hub"), capabilities);
-        homePage = new HomePage(driver);
-    }
+
+
 
     @Given("^I am on the website '(.+)'$")
     public void I_am_on_the_website(String url) throws Throwable {

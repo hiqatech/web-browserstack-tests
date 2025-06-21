@@ -1,7 +1,5 @@
 package common.setup;
 
-
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.testng.Assert;
@@ -9,10 +7,6 @@ import org.testng.Assert;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
-
-import static common.selenium.WebActs.stopWebDriver;
-import static common.selenium.WebHelp.takeScreenShot;
-import static common.util.DataHelp.getTimeStamp;
 
 public class Hooks {
 
@@ -22,10 +16,6 @@ public class Hooks {
     public static String stepLog;
     public static String myUserName;
     public static String myPassword;
-    public static String otpNumber;
-    public static String accountSID;
-    public static String authToken;
-    public static String phoneNumber;
 
     //------------------------------------------------------------------------//
 
@@ -39,12 +29,6 @@ public class Hooks {
         myScenario = scenario.getName();
         System.setProperty("scenario",myScenario);
         System.setProperty("product",myScenario.substring(0,myScenario.indexOf("-")).replace(" ",""));
-
-        // local use, comment before push
-        System.setProperty("runDriver","Chrome");
-        System.setProperty("seleniumGrid","Local"); //http://192.168.1.208:32001/wd/hub
-        System.setProperty("runEnvironment","QA");
-        //
 
         System.setProperty("projectPath",System.getProperty("user.dir"));
         System.setProperty("systemTime", dateTime.format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss")));
@@ -67,30 +51,9 @@ public class Hooks {
         System.out.println("ProjectPath : " + System.getProperty("projectPath"));
         System.out.println("ReportPath : " + System.getProperty("reportPath"));
         System.out.println("Environment : " + System.getProperty("runEnvironment"));
-
         System.out.println("************************************************************************************");
 
     }
-
-    @After
-    public static void tearDown(Scenario scenario)
-    {
-        if(scenario.isFailed())
-        {
-            takeScreenShot(System.getProperty("reportPath") + myScenario + " failed_" + getTimeStamp("YYYY-MM-DD-HH-mm-ss-SSS"));
-            System.out.println("Test Failed !");
-        }
-        else System.out.println("Test Passed !");
-        closeAllDrivers();
-        System.out.println("************************************************************************************");
-    }
-
-    public static void closeAllDrivers(){
-        stopWebDriver();
-    }
-
-    //-----------------------------------------------------------------------------//
-
 
     public static void AssertExecutedStep(String result)
     {

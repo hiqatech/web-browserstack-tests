@@ -1,9 +1,10 @@
-package common.util;
+package common.data;
 
-import browserstack.shaded.commons.io.FileUtils;
+import static data.UtilHelp.storedTexts;
 
 import java.io.File;
-import static common.util.DataHelp.storedTexts;
+
+import org.apache.commons.io.FileUtils;
 
 public class FileHelp {
 
@@ -17,7 +18,7 @@ public class FileHelp {
             return "PASS";
         }
         catch(Exception ex)
-        {System.out.println(ex); return  ex.toString();}
+        {System.out.println(ex.toString()); return  ex.toString();}
     }
 
     public static String checkDownLoad(String expectedName)
@@ -28,20 +29,23 @@ public class FileHelp {
             File dir = downloadFolder;
             dir.mkdirs();
             File[] listOfFiles = downloadFolder.listFiles();
-            Boolean found = false;
+            boolean found = false;
             for(File fileX : listOfFiles)
             {
-                if(fileX.getName().equalsIgnoreCase(expectedName))
-                    found = true;{
+                if(fileX.getName().equalsIgnoreCase(expectedName)) {
+					found = true;
+				}{
                     fileX.delete();}
             }
 
-            if(found == true)
-                return "PASS";
-            else return "FAIL";
+            if(found) {
+				return "PASS";
+			} else {
+				return "FAIL";
+			}
         }
         catch(Exception ex)
-        {System.out.println(ex); return  ex.toString();}
+        {System.out.println(ex.toString()); return  ex.toString();}
     }
 
     public static String deleteFile(String fileName, String path)
@@ -52,7 +56,7 @@ public class FileHelp {
             File dir = folder;
             dir.mkdirs();
             File[] listOfFiles = folder.listFiles();
-            Boolean found = false;
+            boolean found = false;
             for(File fileX : listOfFiles)
             {
                 for(String nameX : storedTexts) {
@@ -64,11 +68,13 @@ public class FileHelp {
                 }
             }
 
-            if(found)
-                return "PASS";
-            else return "FAIL";
+            if(found) {
+				return "PASS";
+			} else {
+				return "FAIL";
+			}
         }
         catch(Exception ex)
-        {System.out.println(ex); return  ex.toString();}
+        {System.out.println(ex.toString()); return  ex.toString();}
     }
 }

@@ -14,6 +14,8 @@ projectName: Banking
 # Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
 # Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
 # Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
 testObservability: true
 
 source: testng:intellij:v1.1.6

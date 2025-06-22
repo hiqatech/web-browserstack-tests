@@ -568,3 +568,63 @@
 2025-06-22T09:41:10.481Z CLI debug [appautomate:service]     loaded module: appautomate:module
 2025-06-22T09:41:10.541Z CLI debug [main]     Starting main function execution
 2025-06-22T09:41:10.542Z CLI debug [main]     Executing CLI
+2025-06-22T14:11:14.876Z CLI debug [testhub:service]     loaded module: _0x846cd6
+2025-06-22T14:11:14.877Z CLI debug [instrumentation:service]     loaded module: instrumentation:module
+2025-06-22T14:11:14.878Z CLI debug [observability:service]     loaded module: observability:module
+2025-06-22T14:11:14.878Z CLI debug [accessibility:service]     loaded module: accessibility:module
+2025-06-22T14:11:14.879Z CLI debug [ai:service]     loaded module: _0x1ace72
+2025-06-22T14:11:14.880Z CLI debug [percy:service]     loaded module: _0x5d817a
+2025-06-22T14:11:14.881Z CLI debug [local:service]     loaded module: _0x5b26eb
+2025-06-22T14:11:14.882Z CLI debug [appautomate:service]     loaded module: appautomate:module
+2025-06-22T14:11:14.971Z CLI debug [main]     Starting main function execution
+2025-06-22T14:11:14.972Z CLI debug [main]     Executing CLI
+2025-06-22T14:11:32.935Z CLI debug [testhub:service]     loaded module: _0x846cd6
+2025-06-22T14:11:32.936Z CLI debug [instrumentation:service]     loaded module: instrumentation:module
+2025-06-22T14:11:32.936Z CLI debug [observability:service]     loaded module: observability:module
+2025-06-22T14:11:32.936Z CLI debug [accessibility:service]     loaded module: accessibility:module
+2025-06-22T14:11:32.937Z CLI debug [ai:service]     loaded module: _0x1ace72
+2025-06-22T14:11:32.937Z CLI debug [percy:service]     loaded module: _0x5d817a
+2025-06-22T14:11:32.938Z CLI debug [local:service]     loaded module: _0x5b26eb
+2025-06-22T14:11:32.938Z CLI debug [appautomate:service]     loaded module: appautomate:module
+2025-06-22T14:11:32.997Z CLI debug [main]     Starting main function execution
+2025-06-22T14:11:32.999Z CLI debug [main]     Executing CLI
+2025-06-22T14:12:51.688Z CLI debug [testhub:service]     loaded module: _0x846cd6
+2025-06-22T14:12:51.689Z CLI debug [instrumentation:service]     loaded module: instrumentation:module
+2025-06-22T14:12:51.689Z CLI debug [observability:service]     loaded module: observability:module
+2025-06-22T14:12:51.689Z CLI debug [accessibility:service]     loaded module: accessibility:module
+2025-06-22T14:12:51.690Z CLI debug [ai:service]     loaded module: _0x1ace72
+2025-06-22T14:12:51.690Z CLI debug [percy:service]     loaded module: _0x5d817a
+2025-06-22T14:12:51.690Z CLI debug [local:service]     loaded module: _0x5b26eb
+2025-06-22T14:12:51.691Z CLI debug [appautomate:service]     loaded module: appautomate:module
+2025-06-22T14:12:51.749Z CLI debug [main]     Starting main function execution
+2025-06-22T14:12:51.750Z CLI debug [main]     Executing CLI
+2025-06-22T14:13:01.962Z CLI debug [testhub:service]     loaded module: _0x846cd6
+2025-06-22T14:13:01.962Z CLI debug [instrumentation:service]     loaded module: instrumentation:module
+2025-06-22T14:13:01.962Z CLI debug [observability:service]     loaded module: observability:module
+2025-06-22T14:13:01.963Z CLI debug [accessibility:service]     loaded module: accessibility:module
+2025-06-22T14:13:01.963Z CLI debug [ai:service]     loaded module: _0x1ace72
+2025-06-22T14:13:01.963Z CLI debug [percy:service]     loaded module: _0x5d817a
+2025-06-22T14:13:01.964Z CLI debug [local:service]     loaded module: _0x5b26eb
+2025-06-22T14:13:01.964Z CLI debug [appautomate:service]     loaded module: appautomate:module
+2025-06-22T14:13:02.022Z CLI debug [main]     Starting main function execution
+2025-06-22T14:13:02.023Z CLI debug [main]     Executing CLI
+2025-06-22T17:21:34.734Z CLI debug [testhub:service]     loaded module: _0x846cd6
+2025-06-22T17:21:34.734Z CLI debug [instrumentation:service]     loaded module: instrumentation:module
+2025-06-22T17:21:34.734Z CLI debug [observability:service]     loaded module: observability:module
+2025-06-22T17:21:34.735Z CLI debug [accessibility:service]     loaded module: accessibility:module
+2025-06-22T17:21:34.735Z CLI debug [ai:service]     loaded module: _0x1ace72
+2025-06-22T17:21:34.735Z CLI debug [percy:service]     loaded module: _0x5d817a
+2025-06-22T17:21:34.736Z CLI debug [local:service]     loaded module: _0x5b26eb
+2025-06-22T17:21:34.736Z CLI debug [appautomate:service]     loaded module: appautomate:module
+2025-06-22T17:21:34.798Z CLI debug [main]     Starting main function execution
+2025-06-22T17:21:34.799Z CLI debug [main]     Executing CLI
+2025-06-22T17:21:47.385Z CLI debug [testhub:service]     loaded module: _0x846cd6
+2025-06-22T17:21:47.385Z CLI debug [instrumentation:service]     loaded module: instrumentation:module
+2025-06-22T17:21:47.385Z CLI debug [observability:service]     loaded module: observability:module
+2025-06-22T17:21:47.386Z CLI debug [accessibility:service]     loaded module: accessibility:module
+2025-06-22T17:21:47.386Z CLI debug [ai:service]     loaded module: _0x1ace72
+2025-06-22T17:21:47.386Z CLI debug [percy:service]     loaded module: _0x5d817a
+2025-06-22T17:21:47.387Z CLI debug [local:service]     loaded module: _0x5b26eb
+2025-06-22T17:21:47.387Z CLI debug [appautomate:service]     loaded module: appautomate:module
+2025-06-22T17:21:47.447Z CLI debug [main]     Starting main function execution
+2025-06-22T17:21:47.448Z CLI debug [main]     Executing CLI

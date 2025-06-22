@@ -13396,3 +13396,615 @@ java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is n
 11:42:07.889 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://eds.browserstack.com/send_sdk_events with request size 691
 11:42:08.704 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
 11:42:08.704 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Data sent successfully to https://eds.browserstack.com with status 200 {"event_type":"sdk_events","data":{"created_day":"2025-06-22T09:42:07.000888 +0000","event_name":"SDKFeaturePerformance","event_json":"{measures=[{\"duration\":14.228299975395203,\"eventName\":\"sdk:cli:on-bootstrap\",\"startTime\":8.174760073813E8,\"success\":true,\"worker\":1,\"failure\":null,\"details\":null,\"entryType\":\"measure\",\"platform\":0,\"command\":null,\"testName\":null,\"hookType\":\"\",\"cli\":true}], sdkRunId=a4db9644-42d1-4de6-a78b-2f689581c704}","user_data":"techhiqa_05caYU","testhub_uuid":"j3so8a8pgybd4hrz4ilet6q8tnqtagzdgduwgcxo","host_info":"{\"hostname\":\"DESKTOP-E2P4R5R\",\"arch\":\"amd64\",\"type\":null,\"version\":\"10.0\",\"platform\":\"Windows 10\"}"}} {Content-Type=application/json}
+16:11:10.019 [main] DEBUG browserStackFileDebugger - Running SDK with properties: {java.specification.version=22, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13035205060919498489\surefirebooter5583891206976333619.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Paris, user.country.format=CH, java.vm.specification.version=22, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-22\bin, sun.java.command=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13035205060919498489\surefirebooter5583891206976333619.jar C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13035205060919498489 2025-06-22T16-11-07_695-jvmRun1 surefire13017247205661436324tmp surefire_06121586818999456139tmp, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\THEBOLLINGERS, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-07-16, java.home=C:\Program Files\Java\jdk-22, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=22.0.2+9-70, user.name=THEBOLLINGERS, stdout.encoding=Cp1252, path.separator=;, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\THEBOL~1\AppData\Local\Temp\, java.version=22.0.2, user.dir=E:\ZolStaff\HiQATech\web-browserstack-tests, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, sun.os.patch.level=, native.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\maven\bin;C:\Program Files\Java\jdk-22\bin;C:\Users\THEBOLLINGERS\AppData\Local\Microsoft\WindowsApps;C:\Users\THEBOLLINGERS\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.3\bin;;C:\Users\THEBOLLINGERS\AppData\Roaming\npm;C:\Users\THEBOLLINGERS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.4\bin;;C:\Program Files\Java\jdk-22\bin;C:\Program Files\maven\bin;;., java.vm.info=mixed mode, sharing, stderr.encoding=Cp1252, java.vendor=Oracle Corporation, java.vm.version=22.0.2+9-70, sun.io.unicode.encoding=UnicodeLittle, java.class.version=66.0}
+16:11:10.325 [main] DEBUG browserStackFileDebugger - Running SDK with classpath: C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13035205060919498489\surefirebooter5583891206976333619.jar
+16:11:10.344 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+16:11:10.346 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+16:11:10.643 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+16:11:10.644 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:11:10.731 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:11:10.736 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+16:11:11.341 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:11:11.342 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:11:11.359 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire13017247205661436324tmp
+16:11:11.360 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire13017247205661436324tmp
+16:11:11.360 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.32.13
+16:11:11.360 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to true
+16:11:11.367 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+16:11:11.367 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+16:11:11.367 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+16:11:11.367 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+16:11:11.368 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 0febd9f2-f97f-4c86-aef2-f1c1c5050ccf
+16:11:11.369 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:11:11.381 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+16:11:11.387 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+16:11:16.321 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+16:11:16.343 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+16:11:16.667 [Thread-2] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-euw.browserstack.com","hub-use.browserstack.com","hub-aps.browserstack.com"]
+16:11:16.936 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 267ms
+16:11:17.588 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 618ms
+16:11:18.423 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 833ms
+16:11:18.453 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-euw.browserstack.com
+16:11:18.477 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:18.479 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+16:11:18.489 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+16:11:18.492 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"product":"[automate]","buildName":"banking browserstack build","os":"Windows 10","languageVersion":"22.0.2","appiumVersion":"","frameworkDetectionInstrumentation":{},"language":"java","sdkRunId":"0febd9f2-f97f-4c86-aef2-f1c1c5050ccf","buildIdentifier":"#13","userFramework":"true","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"cucumber, testng","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"referrer":"true-javaagent\/1.32.13","hostname":"DESKTOP-E2P4R5R","framework":"true","frameworkVersion":"","language_framework":"java_true","detectedFramework":"none","detectedSeleniumVersion":"4.1.4","automationFramework":"selenium","automationFrameworkVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+16:11:18.747 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted, response: {"message":"SDK Event recorded successfully"}
+16:11:18.747 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+16:11:19.453 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:19.454 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+16:11:19.454 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 1242
+16:11:19.454 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://collector-observability.browserstack.com/api/v2/builds with request size 1242
+16:11:19.948 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+16:11:19.948 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+16:11:19.949 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk
+16:11:19.949 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:11:19.949 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk
+16:11:19.950 [main] DEBUG com.browserstack.testOps.Listener - The 'accessibility' key was not found in the response
+16:11:19.950 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+16:11:19.950 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+16:11:19.952 [main] DEBUG com.browserstack.LocalFactory - Starting BrowserStack Local with identifier 22_Jun_1611_DESKTOP_E2P4R5R_OH0u
+16:11:29.941 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+16:11:29.942 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:30.027 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:30.029 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire13017247205661436324tmp
+16:11:30.030 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire13017247205661436324tmp
+16:11:30.034 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire13017247205661436324tmp
+16:11:30.035 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire13017247205661436324tmp
+16:11:31.966 [main] DEBUG browserStackFileDebugger - Running SDK with properties: {java.specification.version=22, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13035205060919498489\surefirebooter5583891206976333619.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Paris, user.country.format=CH, java.vm.specification.version=22, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-22\bin, sun.java.command=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13035205060919498489\surefirebooter5583891206976333619.jar C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13035205060919498489 2025-06-22T16-11-07_695-jvmRun1 surefire13017247205661436324tmp surefire_06121586818999456139tmp, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\THEBOLLINGERS, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-07-16, java.home=C:\Program Files\Java\jdk-22, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=22.0.2+9-70, user.name=THEBOLLINGERS, stdout.encoding=Cp1252, path.separator=;, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\THEBOL~1\AppData\Local\Temp\, java.version=22.0.2, user.dir=E:\ZolStaff\HiQATech\web-browserstack-tests, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, sun.os.patch.level=, native.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\maven\bin;C:\Program Files\Java\jdk-22\bin;C:\Users\THEBOLLINGERS\AppData\Local\Microsoft\WindowsApps;C:\Users\THEBOLLINGERS\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.3\bin;;C:\Users\THEBOLLINGERS\AppData\Roaming\npm;C:\Users\THEBOLLINGERS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.4\bin;;C:\Program Files\Java\jdk-22\bin;C:\Program Files\maven\bin;;., java.vm.info=mixed mode, sharing, stderr.encoding=Cp1252, java.vendor=Oracle Corporation, java.vm.version=22.0.2+9-70, sun.io.unicode.encoding=UnicodeLittle, java.class.version=66.0}
+16:11:31.977 [main] DEBUG browserStackFileDebugger - Running SDK with classpath: C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13035205060919498489\surefirebooter5583891206976333619.jar
+16:11:32.193 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+16:11:32.193 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:11:32.245 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:11:32.250 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+16:11:32.495 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:11:32.495 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:11:32.495 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.32.13
+16:11:32.497 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 0d2c4bfd-c231-4d6d-ad38-3f37133aaa51
+16:11:32.497 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:11:32.505 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+16:11:32.508 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+16:11:33.724 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+16:11:33.737 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+16:11:33.744 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:33.973 [Thread-2] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-euw.browserstack.com","hub-use.browserstack.com","hub-aps.browserstack.com"]
+16:11:34.190 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 212ms
+16:11:34.770 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 578ms
+16:11:35.573 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 802ms
+16:11:35.575 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-euw.browserstack.com
+16:11:35.576 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:35.579 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+16:11:35.580 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:35.776 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+16:11:37.724 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:40.096 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+16:11:40.133 [main] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse string errors from reports, Exception: 
+java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+	at java.base/java.io.StringReader.<init>(StringReader.java:50)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getErrorListString(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:923)
+	at org.testng.TestRunner.afterRun(TestRunner.java:887)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+16:11:40.133 [main] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+16:11:40.212 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"0d2c4bfd-c231-4d6d-ad38-3f37133aaa51","buildIdentifier":"#13","testhub_uuid":"mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"DESKTOP-E2P4R5R","measures":{"sdk:automate:hub-management":1830.1080000000075,"sdk:setup":3614.8573999998625,"sdk:pre-test":24.162800000049174,"sdk:cli:on-bootstrap":10.371799999848008},"frameworkVersion":"","productUsage":{"testObservability":{"buildHashedId":"mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":{"localIdentifier":"22_Jun_1611_DESKTOP_E2P4R5R_OH0u"},"percyOptions":null,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"serenityOverridePlugin":false},"platforms":[{"capabilities":{},"device":null,"browser":"Chrome","os":"Windows","browserVersion":"120.0","osVersion":"10","platformCaps":{"os":"Windows","osVersion":10,"browserVersion":120.0,"browserName":"Chrome"},"platformString":"Windows, 10, Chrome, 120.0","customVariables":"****"}],"parallelsPerPlatform":null,"framework":"true","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":"4.1.4","percyBuildId":null,"product":"[automate]","buildName":"banking browserstack build","os":"Windows 10","languageVersion":"22.0.2","appiumVersion":"","frameworkDetectionInstrumentation":{"retransformClasses":0},"userFramework":"true","detectedDependencies":"cucumber, testng","referrer":"true-javaagent\/1.32.13","framework":"true","locationTrigger":"onFinish","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"java_true","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.1.4","automationFramework":"selenium","seleniumVersion":"4.1.4"}}
+16:11:40.432 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful, response: {"message":"SDK Event recorded successfully"}
+16:11:40.434 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:40.883 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+16:11:40.883 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:11:40.947 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:41.462 [main] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+16:11:41.463 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+16:11:41.466 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:11:41.467 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+16:11:41.468 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk/stop with request size 65
+16:11:41.468 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk/stop with request size 65
+16:11:41.611 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+16:11:41.612 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:11:41.612 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401 with error 
+16:11:41.614 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+16:11:42.061 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload, response: OK
+16:11:42.061 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk/stop with request size 65
+16:11:42.062 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk/stop with request size 65
+16:11:42.212 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+16:11:42.212 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:11:42.212 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401 with error 
+16:11:42.213 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2025-06-22T14:11:42.213774600Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+16:11:42.667 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload, response: OK
+16:11:42.669 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:42.669 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+16:11:42.670 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:45.711 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:45.726 [Thread-0] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+16:11:45.728 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+16:11:45.776 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"0febd9f2-f97f-4c86-aef2-f1c1c5050ccf","buildIdentifier":"#13","testhub_uuid":"mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"DESKTOP-E2P4R5R","measures":{"sdk:testhub":698.0061999999452,"sdk:automate:local":25758.718500000192,"sdk:post-test":0.014800000004470348,"sdk:automate:hub-management":1949.96,"sdk:setup":11769.28,"sdk:pre-test":52.84,"sdk:cli:on-bootstrap":15.73,"sdk:o11y:print-buildlink":1201.8641999999527,"sdk:cli:stop":0.2171000000089407},"frameworkVersion":"","productUsage":{"testObservability":{"buildHashedId":"mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":{"localIdentifier":"22_Jun_1611_DESKTOP_E2P4R5R_OH0u","key":"****"},"percyOptions":null,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"serenityOverridePlugin":false},"platforms":[{"capabilities":{},"browser":"Chrome","device":null,"os":"Windows","browserVersion":"120.0","osVersion":"10","platformCaps":{"os":"Windows","osVersion":10,"browserVersion":120.0,"browserName":"Chrome"},"platformString":"Windows, 10, Chrome, 120.0","customVariables":"****"}],"parallelsPerPlatform":null,"framework":"true","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":"4.1.4","percyBuildId":null,"product":"[automate]","buildName":"banking browserstack build","os":"Windows 10","languageVersion":"22.0.2","appiumVersion":"","frameworkDetectionInstrumentation":{},"userFramework":"true","detectedDependencies":"cucumber, testng","referrer":"true-javaagent\/1.32.13","framework":"true","locationTrigger":"BSTACK_BUILD_END","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"java_true","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.1.4","automationFramework":"selenium","seleniumVersion":"4.1.4"}}
+16:11:45.980 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful, response: {"message":"SDK Event recorded successfully"}
+16:11:45.983 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:11:45.984 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:11:45.984 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:11:47.857 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - unable to delete debug log: java.nio.file.FileSystemException: .\log\browserstack-javaagent.debug.log: The process cannot access the file because it is being used by another process
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at com.browserstack.utils.UtilityMethods.a(Unknown Source)
+	at com.browserstack.utils.UtilityMethods.a(Unknown Source)
+	at com.browserstack.utils.UtilityMethods.sendLogs(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+16:11:47.859 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:47.860 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+16:11:48.175 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:48.185 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 0febd9f2-f97f-4c86-aef2-f1c1c5050ccf, testhub id: mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk
+16:11:48.185 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+16:11:48.188 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:11:48.206 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://eds.browserstack.com/send_sdk_events with request size 686
+16:11:48.974 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+16:11:48.974 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Data sent successfully to https://eds.browserstack.com with status 200 {"event_type":"sdk_events","data":{"created_day":"2025-06-22T14:11:48.000203 +0000","event_name":"SDKFeaturePerformance","event_json":"{measures=[{\"duration\":21.09580000001006,\"eventName\":\"sdk:cli:on-bootstrap\",\"startTime\":1242126.1503,\"success\":true,\"worker\":1,\"failure\":null,\"details\":null,\"entryType\":\"measure\",\"platform\":0,\"command\":null,\"testName\":null,\"hookType\":\"\",\"cli\":true}], sdkRunId=0febd9f2-f97f-4c86-aef2-f1c1c5050ccf}","user_data":"techhiqa_05caYU","testhub_uuid":"mqaeseo54or5qk6tdctgi2ed19m817t6rzmfnlvk","host_info":"{\"hostname\":\"DESKTOP-E2P4R5R\",\"arch\":\"amd64\",\"type\":null,\"version\":\"10.0\",\"platform\":\"Windows 10\"}"}} {Content-Type=application/json}
+16:12:50.837 [main] DEBUG browserStackFileDebugger - Running SDK with properties: {java.specification.version=22, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire6821830594476213804\surefirebooter6252663655122425024.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Paris, user.country.format=CH, java.vm.specification.version=22, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-22\bin, sun.java.command=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire6821830594476213804\surefirebooter6252663655122425024.jar C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire6821830594476213804 2025-06-22T16-12-49_649-jvmRun1 surefire17581347144931630223tmp surefire_08793003690779333688tmp, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\THEBOLLINGERS, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-07-16, java.home=C:\Program Files\Java\jdk-22, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=22.0.2+9-70, user.name=THEBOLLINGERS, stdout.encoding=Cp1252, path.separator=;, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\THEBOL~1\AppData\Local\Temp\, java.version=22.0.2, user.dir=E:\ZolStaff\HiQATech\web-browserstack-tests, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, sun.os.patch.level=, native.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\maven\bin;C:\Program Files\Java\jdk-22\bin;C:\Users\THEBOLLINGERS\AppData\Local\Microsoft\WindowsApps;C:\Users\THEBOLLINGERS\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.3\bin;;C:\Users\THEBOLLINGERS\AppData\Roaming\npm;C:\Users\THEBOLLINGERS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.4\bin;;C:\Program Files\Java\jdk-22\bin;C:\Program Files\maven\bin;;., java.vm.info=mixed mode, sharing, stderr.encoding=Cp1252, java.vendor=Oracle Corporation, java.vm.version=22.0.2+9-70, sun.io.unicode.encoding=UnicodeLittle, java.class.version=66.0}
+16:12:50.848 [main] DEBUG browserStackFileDebugger - Running SDK with classpath: C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire6821830594476213804\surefirebooter6252663655122425024.jar
+16:12:50.857 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+16:12:50.858 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+16:12:51.043 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+16:12:51.043 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:12:51.094 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:12:51.099 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+16:12:51.343 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:12:51.344 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:12:51.350 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire17581347144931630223tmp
+16:12:51.350 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire17581347144931630223tmp
+16:12:51.350 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.32.13
+16:12:51.350 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to true
+16:12:51.353 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+16:12:51.353 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+16:12:51.353 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+16:12:51.353 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+16:12:51.354 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 178d7a26-5686-4358-a557-1b8d27972a22
+16:12:51.354 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:12:51.364 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+16:12:51.367 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+16:12:52.206 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+16:12:52.228 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+16:12:52.595 [Thread-2] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-euw.browserstack.com","hub-use.browserstack.com","hub-aps.browserstack.com"]
+16:12:52.874 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 276ms
+16:12:53.503 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 622ms
+16:12:54.372 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 867ms
+16:12:54.375 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-euw.browserstack.com
+16:12:54.412 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:12:54.416 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+16:12:54.427 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+16:12:54.429 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"product":"[automate]","buildName":"banking browserstack build","os":"Windows 10","languageVersion":"22.0.2","appiumVersion":"","frameworkDetectionInstrumentation":{},"language":"java","sdkRunId":"178d7a26-5686-4358-a557-1b8d27972a22","buildIdentifier":"#14","userFramework":"true","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"cucumber, testng","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"referrer":"true-javaagent\/1.32.13","hostname":"DESKTOP-E2P4R5R","framework":"true","frameworkVersion":"","language_framework":"java_true","detectedFramework":"none","detectedSeleniumVersion":"4.1.4","automationFramework":"selenium","automationFrameworkVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+16:12:54.707 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted, response: {"message":"SDK Event recorded successfully"}
+16:12:54.708 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+16:12:54.975 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:12:54.976 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+16:12:54.976 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 1242
+16:12:54.976 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://collector-observability.browserstack.com/api/v2/builds with request size 1242
+16:12:55.518 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+16:12:55.518 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+16:12:55.521 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf
+16:12:55.522 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:12:55.522 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf
+16:12:55.524 [main] DEBUG com.browserstack.testOps.Listener - The 'accessibility' key was not found in the response
+16:12:55.525 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+16:12:55.525 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+16:12:55.533 [main] DEBUG com.browserstack.LocalFactory - Starting BrowserStack Local with identifier 22_Jun_1612_DESKTOP_E2P4R5R_Rp0l
+16:13:00.641 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+16:13:00.642 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:00.655 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:00.656 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire17581347144931630223tmp
+16:13:00.656 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire17581347144931630223tmp
+16:13:00.662 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire17581347144931630223tmp
+16:13:00.662 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire17581347144931630223tmp
+16:13:01.168 [main] DEBUG browserStackFileDebugger - Running SDK with properties: {java.specification.version=22, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire6821830594476213804\surefirebooter6252663655122425024.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Paris, user.country.format=CH, java.vm.specification.version=22, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-22\bin, sun.java.command=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire6821830594476213804\surefirebooter6252663655122425024.jar C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire6821830594476213804 2025-06-22T16-12-49_649-jvmRun1 surefire17581347144931630223tmp surefire_08793003690779333688tmp, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\THEBOLLINGERS, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-07-16, java.home=C:\Program Files\Java\jdk-22, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=22.0.2+9-70, user.name=THEBOLLINGERS, stdout.encoding=Cp1252, path.separator=;, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\THEBOL~1\AppData\Local\Temp\, java.version=22.0.2, user.dir=E:\ZolStaff\HiQATech\web-browserstack-tests, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, sun.os.patch.level=, native.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\maven\bin;C:\Program Files\Java\jdk-22\bin;C:\Users\THEBOLLINGERS\AppData\Local\Microsoft\WindowsApps;C:\Users\THEBOLLINGERS\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.3\bin;;C:\Users\THEBOLLINGERS\AppData\Roaming\npm;C:\Users\THEBOLLINGERS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.4\bin;;C:\Program Files\Java\jdk-22\bin;C:\Program Files\maven\bin;;., java.vm.info=mixed mode, sharing, stderr.encoding=Cp1252, java.vendor=Oracle Corporation, java.vm.version=22.0.2+9-70, sun.io.unicode.encoding=UnicodeLittle, java.class.version=66.0}
+16:13:01.181 [main] DEBUG browserStackFileDebugger - Running SDK with classpath: C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire6821830594476213804\surefirebooter6252663655122425024.jar
+16:13:01.382 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+16:13:01.383 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:13:01.433 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+16:13:01.439 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+16:13:01.650 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+16:13:01.650 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+16:13:01.650 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.32.13
+16:13:01.651 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: b304e94a-8247-4af7-a4f0-59cace8060b5
+16:13:01.652 [main] INFO  c.b.config.BrowserStackConfig - INFO
+16:13:01.665 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+16:13:01.668 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+16:13:02.471 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+16:13:02.491 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+16:13:02.497 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:02.751 [Thread-2] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-euw.browserstack.com","hub-use.browserstack.com","hub-aps.browserstack.com"]
+16:13:02.973 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 220ms
+16:13:03.583 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 608ms
+16:13:04.421 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 812ms
+16:13:04.425 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-euw.browserstack.com
+16:13:04.427 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:04.433 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+16:13:04.435 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:04.493 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+16:13:04.971 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:06.113 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+16:13:06.142 [main] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse string errors from reports, Exception: 
+java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+	at java.base/java.io.StringReader.<init>(StringReader.java:50)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getErrorListString(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:923)
+	at org.testng.TestRunner.afterRun(TestRunner.java:887)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+16:13:06.143 [main] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+16:13:06.213 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"b304e94a-8247-4af7-a4f0-59cace8060b5","buildIdentifier":"#14","testhub_uuid":"dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"DESKTOP-E2P4R5R","measures":{"sdk:automate:hub-management":1927.1954000000842,"sdk:setup":3267.1800999999978,"sdk:pre-test":4.168400000082329,"sdk:cli:on-bootstrap":18.345200000097975},"frameworkVersion":"","productUsage":{"testObservability":{"buildHashedId":"dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":{"localIdentifier":"22_Jun_1612_DESKTOP_E2P4R5R_Rp0l"},"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":false},"platforms":[{"capabilities":{},"device":null,"browser":"Chrome","os":"Windows","browserVersion":"120.0","osVersion":"10","platformCaps":{"os":"Windows","osVersion":10,"browserVersion":120.0,"browserName":"Chrome"},"platformString":"Windows, 10, Chrome, 120.0","customVariables":"****"}],"parallelsPerPlatform":null,"framework":"true","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":"4.1.4","percyBuildId":null,"product":"[automate]","buildName":"banking browserstack build","os":"Windows 10","languageVersion":"22.0.2","appiumVersion":"","frameworkDetectionInstrumentation":{"retransformClasses":0},"userFramework":"true","detectedDependencies":"cucumber, testng","referrer":"true-javaagent\/1.32.13","framework":"true","locationTrigger":"onFinish","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"java_true","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.1.4","automationFramework":"selenium","seleniumVersion":"4.1.4"}}
+16:13:06.422 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful, response: {"message":"SDK Event recorded successfully"}
+16:13:06.423 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:06.606 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+16:13:06.607 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:13:06.637 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:07.172 [main] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+16:13:07.173 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+16:13:07.175 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+16:13:07.176 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+16:13:07.176 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf/stop with request size 65
+16:13:07.176 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf/stop with request size 65
+16:13:07.321 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+16:13:07.322 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:13:07.322 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401 with error 
+16:13:07.328 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+16:13:07.802 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload, response: OK
+16:13:07.802 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf/stop with request size 65
+16:13:07.802 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf/stop with request size 65
+16:13:07.943 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+16:13:07.944 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+16:13:07.944 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401 with error 
+16:13:07.945 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2025-06-22T14:13:07.944828900Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+16:13:08.403 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload, response: OK
+16:13:08.406 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:08.407 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+16:13:08.411 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:11.352 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:11.364 [Thread-0] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+16:13:11.365 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+16:13:11.406 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"178d7a26-5686-4358-a557-1b8d27972a22","buildIdentifier":"#14","testhub_uuid":"dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"DESKTOP-E2P4R5R","measures":{"sdk:testhub":249.77670000004582,"sdk:automate:local":15822.350700000068,"sdk:post-test":0.01,"sdk:automate:hub-management":1955.71,"sdk:setup":5562.71,"sdk:pre-test":12.83,"sdk:cli:on-bootstrap":16.62,"sdk:o11y:print-buildlink":1228.9147999999113,"sdk:cli:stop":0.9084000000730157},"frameworkVersion":"","productUsage":{"testObservability":{"buildHashedId":"dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":{"localIdentifier":"22_Jun_1612_DESKTOP_E2P4R5R_Rp0l","key":"****"},"percyOptions":null,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"serenityOverridePlugin":false},"platforms":[{"capabilities":{},"osVersion":"10","browserVersion":"120.0","platformCaps":{"os":"Windows","osVersion":10,"browserVersion":120.0,"browserName":"Chrome"},"browser":"Chrome","device":null,"os":"Windows","platformString":"Windows, 10, Chrome, 120.0","customVariables":"****"}],"parallelsPerPlatform":null,"framework":"true","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":"4.1.4","percyBuildId":null,"product":"[automate]","buildName":"banking browserstack build","os":"Windows 10","languageVersion":"22.0.2","appiumVersion":"","frameworkDetectionInstrumentation":{},"userFramework":"true","detectedDependencies":"cucumber, testng","referrer":"true-javaagent\/1.32.13","framework":"true","locationTrigger":"BSTACK_BUILD_END","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"java_true","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.1.4","automationFramework":"selenium","seleniumVersion":"4.1.4"}}
+16:13:11.600 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful, response: {"message":"SDK Event recorded successfully"}
+16:13:11.606 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:13:11.606 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:13:11.606 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+16:13:13.141 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - unable to delete debug log: java.nio.file.FileSystemException: .\log\browserstack-javaagent.debug.log: The process cannot access the file because it is being used by another process
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at com.browserstack.utils.UtilityMethods.a(Unknown Source)
+	at com.browserstack.utils.UtilityMethods.a(Unknown Source)
+	at com.browserstack.utils.UtilityMethods.sendLogs(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+16:13:13.143 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:13.143 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+16:13:13.646 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:13.649 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 178d7a26-5686-4358-a557-1b8d27972a22, testhub id: dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf
+16:13:13.649 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+16:13:13.650 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+16:13:13.655 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://eds.browserstack.com/send_sdk_events with request size 687
+16:13:14.422 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+16:13:14.423 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Data sent successfully to https://eds.browserstack.com with status 200 {"event_type":"sdk_events","data":{"created_day":"2025-06-22T14:13:13.000654 +0000","event_name":"SDKFeaturePerformance","event_json":"{measures=[{\"duration\":21.175799999851733,\"eventName\":\"sdk:cli:on-bootstrap\",\"startTime\":1338010.4276,\"success\":true,\"worker\":1,\"failure\":null,\"details\":null,\"entryType\":\"measure\",\"platform\":0,\"command\":null,\"testName\":null,\"hookType\":\"\",\"cli\":true}], sdkRunId=178d7a26-5686-4358-a557-1b8d27972a22}","user_data":"techhiqa_05caYU","testhub_uuid":"dvwmxmym0ykgy93x7iqvl0wylrh3tjfimmcry6bf","host_info":"{\"hostname\":\"DESKTOP-E2P4R5R\",\"arch\":\"amd64\",\"type\":null,\"version\":\"10.0\",\"platform\":\"Windows 10\"}"}} {Content-Type=application/json}
+19:21:30.293 [main] DEBUG browserStackFileDebugger - Running SDK with properties: {java.specification.version=22, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13207951110261910880\surefirebooter15355494812959217704.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Paris, user.country.format=CH, java.vm.specification.version=22, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-22\bin, sun.java.command=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13207951110261910880\surefirebooter15355494812959217704.jar C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13207951110261910880 2025-06-22T19-21-28_331-jvmRun1 surefire13333736640786026966tmp surefire_011111142969259601897tmp, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\THEBOLLINGERS, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-07-16, java.home=C:\Program Files\Java\jdk-22, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=22.0.2+9-70, user.name=THEBOLLINGERS, stdout.encoding=Cp1252, path.separator=;, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\THEBOL~1\AppData\Local\Temp\, java.version=22.0.2, user.dir=E:\ZolStaff\HiQATech\web-browserstack-tests, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, sun.os.patch.level=, native.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\maven\bin;C:\Program Files\Java\jdk-22\bin;C:\Users\THEBOLLINGERS\AppData\Local\Microsoft\WindowsApps;C:\Users\THEBOLLINGERS\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.3\bin;;C:\Users\THEBOLLINGERS\AppData\Roaming\npm;C:\Users\THEBOLLINGERS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.4\bin;;C:\Program Files\Java\jdk-22\bin;C:\Program Files\maven\bin;;., java.vm.info=mixed mode, sharing, stderr.encoding=Cp1252, java.vendor=Oracle Corporation, java.vm.version=22.0.2+9-70, sun.io.unicode.encoding=UnicodeLittle, java.class.version=66.0}
+19:21:30.508 [main] DEBUG browserStackFileDebugger - Running SDK with classpath: C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13207951110261910880\surefirebooter15355494812959217704.jar
+19:21:30.527 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+19:21:30.546 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+19:21:30.782 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+19:21:30.783 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+19:21:30.891 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+19:21:30.896 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+19:21:31.526 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+19:21:31.526 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+19:21:31.533 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire13333736640786026966tmp
+19:21:31.533 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire13333736640786026966tmp
+19:21:31.533 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.32.13
+19:21:31.534 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to true
+19:21:31.536 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+19:21:31.536 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+19:21:31.536 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+19:21:31.536 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+19:21:31.538 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 5af3f19e-bcfe-4a31-bdeb-c6d00f3ea85c
+19:21:31.538 [main] INFO  c.b.config.BrowserStackConfig - INFO
+19:21:31.556 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+19:21:31.561 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+19:21:35.599 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+19:21:35.624 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+19:21:35.965 [Thread-2] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-euw.browserstack.com","hub-use.browserstack.com","hub-aps.browserstack.com"]
+19:21:36.236 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 268ms
+19:21:36.912 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 660ms
+19:21:37.822 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 906ms
+19:21:37.826 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-euw.browserstack.com
+19:21:37.857 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:37.861 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+19:21:37.873 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+19:21:37.876 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"product":"[automate]","buildName":"banking browserstack build","os":"Windows 10","languageVersion":"22.0.2","appiumVersion":"","frameworkDetectionInstrumentation":{},"language":"java","sdkRunId":"5af3f19e-bcfe-4a31-bdeb-c6d00f3ea85c","buildIdentifier":"#15","userFramework":"true","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"cucumber, testng","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"referrer":"true-javaagent\/1.32.13","hostname":"DESKTOP-E2P4R5R","framework":"true","frameworkVersion":"","language_framework":"java_true","detectedFramework":"none","detectedSeleniumVersion":"4.1.4","automationFramework":"selenium","automationFrameworkVersion":"4.1.4","seleniumVersion":"4.1.4"}}
+19:21:38.118 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted, response: {"message":"SDK Event recorded successfully"}
+19:21:38.119 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:21:38.784 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:38.784 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+19:21:38.784 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 1242
+19:21:38.784 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://collector-observability.browserstack.com/api/v2/builds with request size 1242
+19:21:39.295 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+19:21:39.295 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+19:21:39.296 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi
+19:21:39.297 [main] INFO  c.b.config.BrowserStackConfig - INFO
+19:21:39.297 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi
+19:21:39.298 [main] DEBUG com.browserstack.testOps.Listener - The 'accessibility' key was not found in the response
+19:21:39.299 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+19:21:39.299 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+19:21:39.304 [main] DEBUG com.browserstack.LocalFactory - Starting BrowserStack Local with identifier 22_Jun_1921_DESKTOP_E2P4R5R_jJUN
+19:21:46.012 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+19:21:46.013 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:46.068 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:46.070 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire13333736640786026966tmp
+19:21:46.070 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire13333736640786026966tmp
+19:21:46.072 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire13333736640786026966tmp
+19:21:46.072 [Thread-8] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire13333736640786026966tmp
+19:21:46.583 [main] DEBUG browserStackFileDebugger - Running SDK with properties: {java.specification.version=22, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13207951110261910880\surefirebooter15355494812959217704.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Paris, user.country.format=CH, java.vm.specification.version=22, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-22\bin, sun.java.command=C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13207951110261910880\surefirebooter15355494812959217704.jar C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13207951110261910880 2025-06-22T19-21-28_331-jvmRun1 surefire13333736640786026966tmp surefire_011111142969259601897tmp, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\THEBOLLINGERS, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-07-16, java.home=C:\Program Files\Java\jdk-22, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=22.0.2+9-70, user.name=THEBOLLINGERS, stdout.encoding=Cp1252, path.separator=;, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\THEBOL~1\AppData\Local\Temp\, java.version=22.0.2, user.dir=E:\ZolStaff\HiQATech\web-browserstack-tests, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, sun.os.patch.level=, native.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\maven\bin;C:\Program Files\Java\jdk-22\bin;C:\Users\THEBOLLINGERS\AppData\Local\Microsoft\WindowsApps;C:\Users\THEBOLLINGERS\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.3\bin;;C:\Users\THEBOLLINGERS\AppData\Roaming\npm;C:\Users\THEBOLLINGERS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.4\bin;;C:\Program Files\Java\jdk-22\bin;C:\Program Files\maven\bin;;., java.vm.info=mixed mode, sharing, stderr.encoding=Cp1252, java.vendor=Oracle Corporation, java.vm.version=22.0.2+9-70, sun.io.unicode.encoding=UnicodeLittle, java.class.version=66.0}
+19:21:46.594 [main] DEBUG browserStackFileDebugger - Running SDK with classpath: C:\Users\THEBOLLINGERS\AppData\Local\Temp\surefire13207951110261910880\surefirebooter15355494812959217704.jar
+19:21:46.797 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+19:21:46.798 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+19:21:46.853 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+19:21:46.859 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+19:21:47.080 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+19:21:47.080 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+19:21:47.080 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.32.13
+19:21:47.082 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 1cc38e8f-6f4d-4350-babb-43000397320e
+19:21:47.082 [main] INFO  c.b.config.BrowserStackConfig - INFO
+19:21:47.091 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+19:21:47.094 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+19:21:47.926 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+19:21:47.942 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+19:21:47.948 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:48.212 [Thread-2] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-euw.browserstack.com","hub-use.browserstack.com","hub-aps.browserstack.com"]
+19:21:48.435 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 220ms
+19:21:49.022 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 582ms
+19:21:49.916 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-aps.browserstack.com HUB IS: 891ms
+19:21:49.920 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-euw.browserstack.com
+19:21:49.922 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:49.929 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:21:49.932 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:50.042 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+19:21:50.768 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:52.418 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+19:21:52.448 [main] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse string errors from reports, Exception: 
+java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+	at java.base/java.io.StringReader.<init>(StringReader.java:50)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getErrorListString(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:923)
+	at org.testng.TestRunner.afterRun(TestRunner.java:887)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+19:21:52.448 [main] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+19:21:52.518 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"1cc38e8f-6f4d-4350-babb-43000397320e","buildIdentifier":"#15","testhub_uuid":"aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"DESKTOP-E2P4R5R","measures":{"sdk:automate:hub-management":1970.5606999993324,"sdk:setup":3349.7852999996394,"sdk:pre-test":23.92960000038147,"sdk:cli:on-bootstrap":14.429399998858571},"frameworkVersion":"","productUsage":{"testObservability":{"buildHashedId":"aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":{"localIdentifier":"22_Jun_1921_DESKTOP_E2P4R5R_jJUN"},"percyOptions":null,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"serenityOverridePlugin":false},"platforms":[{"browser":"Chrome","os":"Windows","device":null,"platformCaps":{"os":"Windows","osVersion":10,"browserVersion":120.0,"browserName":"Chrome"},"osVersion":"10","browserVersion":"120.0","capabilities":{},"platformString":"Windows, 10, Chrome, 120.0","customVariables":"****"}],"parallelsPerPlatform":null,"framework":"true","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":"4.1.4","percyBuildId":null,"product":"[automate]","buildName":"banking browserstack build","os":"Windows 10","languageVersion":"22.0.2","appiumVersion":"","frameworkDetectionInstrumentation":{"retransformClasses":0},"userFramework":"true","detectedDependencies":"cucumber, testng","referrer":"true-javaagent\/1.32.13","framework":"true","locationTrigger":"onFinish","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"java_true","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.1.4","automationFramework":"selenium","seleniumVersion":"4.1.4"}}
+19:21:52.716 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful, response: {"message":"SDK Event recorded successfully"}
+19:21:52.720 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:53.175 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Serenity
+19:21:53.175 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+19:21:53.219 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:53.769 [main] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+19:21:53.770 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+19:21:53.772 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+19:21:53.773 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+19:21:53.773 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi/stop with request size 65
+19:21:53.773 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi/stop with request size 65
+19:21:53.924 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+19:21:53.925 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+19:21:53.925 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401 with error 
+19:21:53.932 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+19:21:54.499 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload, response: OK
+19:21:54.500 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi/stop with request size 65
+19:21:54.501 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi/stop with request size 65
+19:21:54.701 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+19:21:54.702 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+19:21:54.702 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401 with error 
+19:21:54.703 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2025-06-22T17:21:54.703169700Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.a(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+19:21:55.174 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload, response: OK
+19:21:55.174 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:55.175 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+19:21:55.175 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:57.658 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:21:57.680 [Thread-0] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+19:21:57.682 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+19:21:57.723 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"5af3f19e-bcfe-4a31-bdeb-c6d00f3ea85c","buildIdentifier":"#15","testhub_uuid":"aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"DESKTOP-E2P4R5R","measures":{"sdk:testhub":621.1145999990404,"sdk:automate:local":18355.842600001022,"sdk:post-test":0.01,"sdk:automate:hub-management":1974.22,"sdk:setup":6489.95,"sdk:pre-test":26.19,"sdk:cli:on-bootstrap":16.52,"sdk:o11y:print-buildlink":1401.5482000000775,"sdk:cli:stop":0.17080000042915344},"frameworkVersion":"","productUsage":{"testObservability":{"buildHashedId":"aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":true,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":{"localIdentifier":"22_Jun_1921_DESKTOP_E2P4R5R_jJUN","key":"****"},"percyOptions":null,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"serenityOverridePlugin":false},"platforms":[{"os":"Windows","browser":"Chrome","device":null,"platformCaps":{"os":"Windows","osVersion":10,"browserVersion":120.0,"browserName":"Chrome"},"capabilities":{},"osVersion":"10","browserVersion":"120.0","platformString":"Windows, 10, Chrome, 120.0","customVariables":"****"}],"parallelsPerPlatform":null,"framework":"true","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":"4.1.4","percyBuildId":null,"product":"[automate]","buildName":"banking browserstack build","os":"Windows 10","languageVersion":"22.0.2","appiumVersion":"","frameworkDetectionInstrumentation":{},"userFramework":"true","detectedDependencies":"cucumber, testng","referrer":"true-javaagent\/1.32.13","framework":"true","locationTrigger":"BSTACK_BUILD_END","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"java_true","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.1.4","automationFramework":"selenium","seleniumVersion":"4.1.4"}}
+19:21:57.967 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful, response: {"message":"SDK Event recorded successfully"}
+19:21:57.974 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+19:21:57.974 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack yml path passed - E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+19:21:57.975 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+19:22:00.124 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - unable to delete debug log: java.nio.file.FileSystemException: .\log\browserstack-javaagent.debug.log: The process cannot access the file because it is being used by another process
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:109)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at com.browserstack.utils.UtilityMethods.a(Unknown Source)
+	at com.browserstack.utils.UtilityMethods.a(Unknown Source)
+	at com.browserstack.utils.UtilityMethods.sendLogs(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+19:22:00.125 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:22:00.125 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+19:22:00.396 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:22:00.400 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 5af3f19e-bcfe-4a31-bdeb-c6d00f3ea85c, testhub id: aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi
+19:22:00.400 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+19:22:00.401 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file E:\ZolStaff\HiQATech\web-browserstack-tests\log\key-metrics.json
+19:22:00.407 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://eds.browserstack.com/send_sdk_events with request size 688
+19:22:01.183 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+19:22:01.183 [Thread-0] DEBUG c.b.monitoring.PerformanceTester - Data sent successfully to https://eds.browserstack.com with status 200 {"event_type":"sdk_events","data":{"created_day":"2025-06-22T17:22:00.000406 +0000","event_name":"SDKFeaturePerformance","event_json":"{measures=[{\"duration\":22.97470000013709,\"eventName\":\"sdk:cli:on-bootstrap\",\"startTime\":1.2663888163E7,\"success\":true,\"worker\":1,\"failure\":null,\"details\":null,\"entryType\":\"measure\",\"platform\":0,\"command\":null,\"testName\":null,\"hookType\":\"\",\"cli\":true}], sdkRunId=5af3f19e-bcfe-4a31-bdeb-c6d00f3ea85c}","user_data":"techhiqa_05caYU","testhub_uuid":"aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi","host_info":"{\"hostname\":\"DESKTOP-E2P4R5R\",\"arch\":\"amd64\",\"type\":null,\"version\":\"10.0\",\"platform\":\"Windows 10\"}"}} {Content-Type=application/json}

@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -23,10 +24,9 @@ public class WebHelp {
     public static int waitTime = 500;
     public static int timeOut = 60;
 
-    public static String startMyWebDriver(String driver){
+    public static String startMyWebDriver(){
         try
         {
-
             MutableCapabilities capabilities = new MutableCapabilities();
             HashMap<String, String> bstackOptions = new HashMap<>();
             bstackOptions.putIfAbsent("source", "cucumber-java:sample-master:v1.2");

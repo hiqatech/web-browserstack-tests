@@ -3,8 +3,8 @@ package common;
 import io.cucumber.testng.*;
 
 @CucumberOptions(
-        glue = "com.browserstack.stepdefs",
-        features = "src/test/resources/features/test",
+        glue = "common.stepdefs",
+        features = "src/test/resources/features/Banking/Web",
         plugin = {
                 "pretty",
                 "html:reports/tests/cucumber/cucumber-pretty.html",
@@ -12,4 +12,4 @@ import io.cucumber.testng.*;
                 "json:reports/tests/cucumber/json/cucumberTestReport.json"
         }
 )
-public class RunWebDriverCucumberTests extends AbstractTestNGCucumberTests {}
+public class RunWebTests extends AbstractTestNGCucumberTests {}

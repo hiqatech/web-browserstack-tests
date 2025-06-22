@@ -1,5 +1,7 @@
 package common.stepdefs;
 
+import common.setup.AllPages;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import common.data.UtilHelp;
 import common.data.FileHelp;
@@ -12,17 +14,27 @@ import static common.setup.Hooks.VerifyExecutedStep;
 
 public class WebSteps {
 
-    @Given("I start the {string} driver")
-    public static void IStartTheWebDriver(String driver) {
-    	   if(driver.contains("default")) {
-   			driver = System.getProperty("runDriver");
-   		}
-        AssertExecutedStep( WebHelp.startMyWebDriver(driver) + " : " + "I start the Webdriver with the " + driver + " browser");
+    @Given("I setup the {string} product and {string} environment")
+    public static void ISetProductEnv(String product, String environment){
+        System.setProperty("runEnvironment",product);
+        System.setProperty("product",environment);
+        System.setProperty("mainURL", AllURLs.getProductURL());
+        AllPages.setAllProductsPageElements();
+    }
+
+    @Given("I wait {string} secs for {string}")
+    public void IWaitSecSFor(int time, String what) {
+        AssertExecutedStep( WebHelp.sleep(time) + " : " + "I wait " + time + " for " + what);
+    }
+
+    @Given("I start the webdriver")
+    public static void IStartTheWebDriver() {
+        AssertExecutedStep( WebHelp.startMyWebDriver() + " : " + "I start the Webdriver");
     }
 
     @Given("I stop the webdriver")
     public static void IStopTheWebDriver() {
-      	VerifyExecutedStep( WebHelp.stopMyWebDriver() + " : " + "I stop the Webdriver with " + System.getProperty("runDriver") + " the browser");
+      	VerifyExecutedStep( WebHelp.stopMyWebDriver() + " : " + "I stop the Webdriver");
     }
 
     @Given("I navigate to the {string} url")
@@ -35,7 +47,7 @@ public class WebSteps {
 
     @Given("I navigate to the Home page")
     public static void INavigateToTheHomePage(){
-    	IStartTheWebDriver("default");
+    	IStartTheWebDriver();
         AssertExecutedStep( WebHelp.navigateTo(System.getProperty("mainURL")) + " : " + "I navigate to the " + System.getProperty("mainURL") + " URL");  
         IAmOnThePage("Home");
     }
@@ -205,8 +217,8 @@ public class WebSteps {
         AssertExecutedStep( WebHelp.waitToDisappear(AllProducts.getElementSelector(elementName)) + " : The " + elementName + " should not be visible with selector " + AllProducts.getElementSelector(elementName));
     }
 
-    @Given("The {string} element {string} should {string} {string}")
-    public static void TheElementTextShouldBe(String elementName, String attribute, String condition, String text) {
+    @Given("The {string} element {string} should be {string}")
+    public static void TheElementTextShouldBe(String elementName, String attribute, String text) {
     	attribute = attribute.toUpperCase();
         if (text.contains("Text")) {
 			UtilHelp.getStoredText(text);
@@ -228,20 +240,10 @@ public class WebSteps {
 		}
 
         String result = "FAIL";
+        if (currentText.equalsIgnoreCase(text))
+            result = "PASS";
 
-        if (condition.equalsIgnoreCase("EQUAL")) {
-            if (currentText.equalsIgnoreCase(text)) {
-				result = "PASS";
-			}
-        } else if (condition.equalsIgnoreCase("CONTAIN")) {
-            if (currentText.contains(text)) {
-				result = "PASS";
-			}
-        } else {
-			AssertExecutedStep( "FAIL" + " : " + "The " + condition + " condition test of element has not been implemented");
-		}
-
-        AssertExecutedStep( result + " : " + "The " + currentText + " " + attribute + " should " + condition + " with text " + text + " in the " + elementName);
+        AssertExecutedStep( result + " : " + "The " + currentText + " " + attribute + " should be " + text + " in the " + elementName);
     }
 
     @Given("The {string} element {string} should not {string} {string}")
@@ -327,7 +329,6 @@ public class WebSteps {
     public static String checkTheElementVisibility(String elementName) {
     	return WebHelp.checkElementVisibility(AllProducts.getElementSelector(elementName)) + " : UnVisibility of element " + elementName;
     }
-
 
 
 }

@@ -1,27 +1,32 @@
 package common.setup;
 
+import products.Banking.Pages.*;
+
 public class AllPages {
 
-    public static String getYouTubeElementSelector(String elementName)
+    public static String getBankingElementSelector(String elementName)
     {
         if(System.getProperty("activePage").equalsIgnoreCase("Home"))
-            return products.YouTube.Pages.HomePage.getElementSelector(elementName);
-        else if(System.getProperty("activePage").equalsIgnoreCase("Search"))
-            return products.YouTube.Pages.SearchPage.getElementSelector(elementName);
+            return Home.getElementSelector(elementName);
+        else if(System.getProperty("activePage").equalsIgnoreCase("Login"))
+            return Login.getElementSelector(elementName);
+        else if(System.getProperty("activePage").equalsIgnoreCase("UserHome"))
+            return UserHome.getElementSelector(elementName);
+        else if(System.getProperty("activePage").equalsIgnoreCase("Deposit"))
+            return Deposit.getElementSelector(elementName);
+        else if(System.getProperty("activePage").equalsIgnoreCase("Transactions"))
+            return Transactions.getElementSelector(elementName);
         else {System.out.println( System.getProperty("product") + " " + System.getProperty("activePage") +
                                  " Page has not been defined in the AllPages");
             return "NoSuchAnElement";}
     }
 
-    public static String getGitHubElementSelector(String elementName)
-    {
-        if(System.getProperty("activePage").equalsIgnoreCase("Home"))
-            return products.GitHub.Pages.HomePage.getElementSelector(elementName);
-        else if(System.getProperty("activePage").equalsIgnoreCase("MyProfile"))
-            return products.GitHub.Pages.MyProfilePage.getElementSelector(elementName);
-        else {System.out.println( System.getProperty("product") + " " + System.getProperty("activePage") +
-                " Page has not been defined in the AllPages");
-            return "NoSuchAnElement";}
+    public static void setAllProductsPageElements(){
+        Deposit.setElements();
+        Home.setElements();
+        Login.setElements();
+        Transactions.setElements();
+        UserHome.setElements();
     }
 
 

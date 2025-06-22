@@ -1,12 +1,16 @@
 package common.setup;
 
+import common.stepdefs.WebSteps;
 import io.cucumber.java.Before;
+import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 
 public class Hooks {
 
@@ -14,22 +18,21 @@ public class Hooks {
     public static Scenario scenario;
     public static String myScenario;
     public static String stepLog;
-    public static String myUserName;
-    public static String myPassword;
 
     //------------------------------------------------------------------------//
-
     @Before
+    @BeforeTest
     public void setup(Scenario scenario) throws Exception
     {
         this.scenario = scenario;
-
         LocalDateTime dateTime = LocalDateTime.now();
+
+        System.setProperty("runEnvironment","QA");
 
         myScenario = scenario.getName();
         System.setProperty("scenario",myScenario);
         System.setProperty("product",myScenario.substring(0,myScenario.indexOf("-")).replace(" ",""));
-
+        System.setProperty("mainURL", AllURLs.getProductURL());
         System.setProperty("projectPath",System.getProperty("user.dir"));
         System.setProperty("systemTime", dateTime.format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss")));
         System.setProperty("userID",System.getProperty("user.home").replace("C:\\Users\\",""));
@@ -55,16 +58,27 @@ public class Hooks {
 
     }
 
+    @After
+    @AfterTest
+    public static void tearDown(Scenario scenario)
+    {
+        WebSteps.IStopTheWebDriver();
+        System.out.println("************************************************************************************");
+    }
+
+    //-----------------------------------------------------------------------------//
+
+
     public static void AssertExecutedStep(String result)
     {
         stepLog = result;
         if (!result.toUpperCase().contains("PASS")) {
-            Hooks.scenario.log(getResultFailLog(result));
+            //Hooks.scenario.log(getResultFailLog(result));
             System.out.println(result);
             Assert.assertTrue(false);
         }
         else {
-            Hooks.scenario.log(result.replace(",,,",""));
+            //Hooks.scenario.log(result.replace(",,,",""));
             System.out.println(result);
         }
     }
@@ -73,15 +87,15 @@ public class Hooks {
     {
         stepLog = result;
         if (!result.toUpperCase().contains("PASS")){
-            Hooks.scenario.log(getResultFailLog(result));
-            //System.out.println(result);
+            //Hooks.scenario.log(getResultFailLog(result));
+            System.out.println(result);
         }
     }
 
     public static String getResultFailLog(String result){
-        String extString = Arrays.asList(result.split(" ,,, " )).get(0);
-        String desc = Arrays.asList(result.split(" ,,, " )).get(1);
-        result = "FAIL " + desc + " caused by : " + extString;
+        //String extString = Arrays.asList(result.split(" ,,, " )).get(0);
+        //String desc = Arrays.asList(result.split(" ,,, " )).get(1);
+        result = "FAIL : " + result;
         return result;
     }
 

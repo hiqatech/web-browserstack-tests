@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.hiqatech</groupId>
-    <artifactId>browserstack-tests</artifactId>
+    <artifactId>web-browserstack-tests</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -47,11 +46,11 @@
             <version>${selenium-java.version}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.browserstack</groupId>
             <artifactId>browserstack-java-sdk</artifactId>
-            <version>${browserstack-java-sdk.version}</version>
-            <scope>compile</scope>
+            <version>LATEST</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -91,9 +90,7 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                         </suiteXmlFiles>
-                        <argLine>
-                            -javaagent:${com.browserstack:browserstack-java-sdk:jar}
-                        </argLine>
+                        <argLine>-javaagent:${com.browserstack:browserstack-java-sdk:jar}</argLine>
                         <systemPropertyVariables>
                             <cucumber.publish.quiet>true</cucumber.publish.quiet>
                         </systemPropertyVariables>
@@ -103,7 +100,7 @@
     </build>
     <profiles>
         <profile>
-            <id>sample-test</id>
+            <id>test</id>
             <build>
                 <plugins>
                     <plugin>
@@ -114,36 +111,10 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
-                            <argLine>
-                                -javaagent:${com.browserstack:browserstack-java-sdk:jar}
-                            </argLine>
+                            <argLine>-javaagent:${com.browserstack:browserstack-java-sdk:jar}</argLine>
                             <systemPropertyVariables>
                                 <cucumber.publish.quiet>true</cucumber.publish.quiet>
-                                <cucumber.features>src/test/resources/features/test</cucumber.features>
-                            </systemPropertyVariables>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>sample-local-test</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.0.0-M5</version>
-                        <configuration>
-                            <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                            </suiteXmlFiles>
-                            <argLine>
-                                -javaagent:${com.browserstack:browserstack-java-sdk:jar}
-                            </argLine>
-                            <systemPropertyVariables>
-                                <cucumber.publish.quiet>true</cucumber.publish.quiet>
-                                <cucumber.features>src/test/resources/features/localtest</cucumber.features>
+                                <cucumber.features>src/test/resources/features/Banking/Web</cucumber.features>
                             </systemPropertyVariables>
                         </configuration>
                     </plugin>

@@ -1,10 +1,6 @@
-package products.Banking.Pages;
-
-import io.cucumber.java.en.Given;
+package products.Banking.pages;
 
 import java.util.HashMap;
-
-import static common.stepdefs.WebSteps.*;
 
 public class Login {
 

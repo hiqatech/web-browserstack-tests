@@ -1,4 +1,4 @@
-package products.Banking.Pages;
+package products.Banking.pages;
 
 import java.util.HashMap;
 
@@ -13,7 +13,11 @@ public class Transactions {
         elementLocators.put("transaction2_amount", "//table//tbody//tr[2]//td[2]");
         elementLocators.put("transaction3_amount", "//table//tbody//tr[3]//td[2]");
         elementLocators.put("back_button", "//button[text()='Back']");
+        elementLocators.put("reset_button", "//button[text()='Reset']");
 
+        elementLocators.put("home_button", "//button[text()='Home']");
+        elementLocators.put("logout_button", "//button[text()='Logout']");
+        elementLocators.put("", "");
 
     }
 

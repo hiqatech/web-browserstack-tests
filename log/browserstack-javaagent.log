@@ -1903,3 +1903,341 @@
 19:21:57.975 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
 19:22:00.400 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 5af3f19e-bcfe-4a31-bdeb-c6d00f3ea85c, testhub id: aql56etzgplhxjdzibx4z2papyi9kjdz6v5bnvoi
 19:22:00.400 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+21:47:16.344 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+21:47:16.345 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+21:47:16.536 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+21:47:16.537 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+21:47:16.588 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+21:47:16.593 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+21:47:16.838 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to true
+21:47:16.841 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 280b00f4-e416-491f-be39-ab78b8ba267c
+21:47:16.841 [main] INFO  c.b.config.BrowserStackConfig - INFO
+21:47:16.853 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+21:47:16.857 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+21:47:18.177 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+21:47:18.194 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+21:47:20.497 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+21:47:20.785 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+21:47:21.643 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: hxokha1g5iapptnr5irwcdnxakj8ak0pzlbharrs
+21:47:21.643 [main] INFO  c.b.config.BrowserStackConfig - INFO
+21:47:21.647 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+21:47:27.489 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+21:47:28.517 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+21:47:28.517 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+21:47:28.569 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+21:47:28.574 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+21:47:28.784 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: c4ffead3-f9d3-4c81-bd67-707060db91d1
+21:47:28.784 [main] INFO  c.b.config.BrowserStackConfig - INFO
+21:47:28.793 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+21:47:28.795 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+21:47:29.627 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+21:47:29.648 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+21:47:31.691 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+21:47:31.752 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+21:47:46.815 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+21:47:49.619 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+21:47:49.620 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+21:47:51.648 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/e464bd42492a598ae2b6e5bb1815a5fada666abe
+21:47:51.649 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+21:47:51.654 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 280b00f4-e416-491f-be39-ab78b8ba267c, testhub id: hxokha1g5iapptnr5irwcdnxakj8ak0pzlbharrs
+21:47:51.654 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+21:53:43.321 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+21:53:43.322 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+21:53:43.511 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+21:53:43.511 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+21:53:43.564 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+21:53:43.569 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+21:53:43.817 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to true
+21:53:43.821 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 86b8f0d6-e308-4e5b-8ebc-58a9560a3aea
+21:53:43.821 [main] INFO  c.b.config.BrowserStackConfig - INFO
+21:53:43.830 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+21:53:43.833 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+21:53:45.044 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+21:53:45.077 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+21:53:47.272 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+21:53:47.538 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+21:53:48.295 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: xn3wjt7elyut3svrijqksdtt6dik88qpsj8d9qcq
+21:53:48.296 [main] INFO  c.b.config.BrowserStackConfig - INFO
+21:53:48.300 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+21:53:53.547 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+21:53:54.577 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+21:53:54.578 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+21:53:54.635 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+21:53:54.641 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+21:53:54.868 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 674b4054-0f35-488b-b1d2-1954ebe67b32
+21:53:54.868 [main] INFO  c.b.config.BrowserStackConfig - INFO
+21:53:54.879 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+21:53:54.882 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+21:53:56.022 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+21:53:56.052 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+21:53:58.094 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+21:53:58.161 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+21:54:10.547 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+21:54:13.461 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+21:54:13.461 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+21:54:16.022 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/a32ddd9993b7024139042f40905475ef995f81e6
+21:54:16.023 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+21:54:16.043 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 86b8f0d6-e308-4e5b-8ebc-58a9560a3aea, testhub id: xn3wjt7elyut3svrijqksdtt6dik88qpsj8d9qcq
+21:54:16.043 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:10:15.758 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+00:10:15.759 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+00:10:16.006 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+00:10:16.007 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:10:16.087 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:10:16.095 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+00:10:16.988 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to true
+00:10:16.992 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 5ebe80f6-842c-4767-8af7-8e8c5de6c5df
+00:10:16.992 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:10:17.030 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+00:10:17.034 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:10:18.102 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:10:18.136 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+00:10:24.015 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+00:10:24.295 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:10:25.319 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: 5cgo0nqminbbadkszncyl2c9vqef47pvdwr8ubjf
+00:10:25.319 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:10:25.324 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+00:10:31.364 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+00:30:21.893 [SIGINT handler] INFO  c.b.utils.ExitSignalHandler - Shutdown triggered by: INT 2
+00:30:23.772 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+00:30:59.205 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+00:30:59.206 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+00:30:59.395 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+00:30:59.395 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:30:59.446 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:30:59.453 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+00:30:59.702 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to true
+00:30:59.706 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 73c4712a-c1f2-49f3-8e7f-62c17b235682
+00:30:59.706 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:30:59.715 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+00:30:59.720 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:31:00.847 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:31:00.873 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+00:31:03.860 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+00:31:04.359 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:31:05.252 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: pbu7rpsvkm0nce845dt1pwjryningthhuai6d5qr
+00:31:05.253 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:31:05.257 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+00:31:10.805 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+00:31:11.882 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+00:31:11.882 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:31:11.940 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:31:11.949 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+00:31:12.214 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 22e21b79-6ff8-4769-8962-366768488c35
+00:31:12.214 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:31:12.225 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+00:31:12.229 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:31:13.153 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:31:13.165 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+00:31:15.716 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:31:15.904 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+00:31:38.337 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+00:31:41.361 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:31:41.362 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:31:43.663 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/b4a9e870fc03c8685b01d10e737c7df501efca79
+00:31:43.664 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:31:43.774 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 73c4712a-c1f2-49f3-8e7f-62c17b235682, testhub id: pbu7rpsvkm0nce845dt1pwjryningthhuai6d5qr
+00:31:43.774 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:36:31.113 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+00:36:31.114 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+00:36:31.304 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+00:36:31.304 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:36:31.356 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:36:31.361 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+00:36:31.616 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to true
+00:36:31.619 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 07eeb5dc-51d3-419d-bd2f-a273fe801008
+00:36:31.620 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:36:31.634 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+00:36:31.638 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:36:32.560 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:36:32.594 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+00:36:35.414 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+00:36:35.672 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:36:36.472 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: g8zqr0bipwsjfuofobvvweysnlsqhlv8jvqztidl
+00:36:36.472 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:36:36.476 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+00:36:41.514 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+00:36:42.240 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+00:36:42.240 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:36:42.293 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:36:42.298 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+00:36:42.510 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 42d6e05b-4f2f-46e6-88c5-4b5b9486aa56
+00:36:42.510 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:36:42.519 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+00:36:42.521 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:36:43.316 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:36:43.330 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+00:36:47.174 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:36:47.230 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+00:37:50.499 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+00:37:53.361 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:37:53.362 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:37:55.522 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/1d1d935a594836d4fe63ccfe86eb166226e0b13d
+00:37:55.522 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:37:55.528 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 07eeb5dc-51d3-419d-bd2f-a273fe801008, testhub id: g8zqr0bipwsjfuofobvvweysnlsqhlv8jvqztidl
+00:37:55.529 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:49:38.518 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+00:49:38.519 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+00:49:38.719 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+00:49:38.720 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:49:38.772 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:49:38.777 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+00:49:39.036 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to true
+00:49:39.040 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: f5e1daa2-3c80-4e53-a29c-f72f3ffc7693
+00:49:39.040 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:49:39.053 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+00:49:39.057 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:49:39.990 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:49:40.012 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+00:49:42.637 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+00:49:42.894 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:49:43.688 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: o8cutzjrcanev6meatcdgqpfpq4n2y211neqh04n
+00:49:43.689 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:49:43.693 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+00:49:48.743 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+00:49:49.486 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+00:49:49.486 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:49:49.539 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:49:49.546 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+00:49:49.766 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: c276aab4-2e9b-4677-a790-74cac199a750
+00:49:49.767 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:49:49.776 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+00:49:49.779 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:49:50.636 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+00:49:50.671 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=true
+00:49:53.274 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:49:53.331 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is true. We currently support frameworks testng, cucumber-testng & serenity
+00:50:31.522 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+00:50:34.827 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:50:34.828 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+00:50:36.848 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/223e0ee5679416a9e8014ecb87d0ae1360821b10
+00:50:36.849 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:50:36.868 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: f5e1daa2-3c80-4e53-a29c-f72f3ffc7693, testhub id: o8cutzjrcanev6meatcdgqpfpq4n2y211neqh04n
+00:50:36.869 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+07:05:33.300 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+07:05:33.325 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+07:05:33.685 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+07:05:33.685 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+07:05:34.027 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+07:05:34.044 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+07:05:35.295 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to cucumber-testng
+07:05:35.301 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 628c2344-05c0-45ff-a537-e6a245d392df
+07:05:35.301 [main] INFO  c.b.config.BrowserStackConfig - INFO
+07:05:35.333 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+07:05:35.339 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+07:05:42.131 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+07:05:42.204 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=cucumber-testng
+07:05:44.928 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+07:05:46.464 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: rctkglsbh29h9rqyqykrf0doasogsvz8qf2yxzy8
+07:05:46.464 [main] INFO  c.b.config.BrowserStackConfig - INFO
+07:05:46.467 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+07:05:47.105 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+07:05:47.106 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+07:06:00.729 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+07:06:07.812 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/rctkglsbh29h9rqyqykrf0doasogsvz8qf2yxzy8 to view build report, insights, and many more debugging information all at one place!
+
+07:06:07.812 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+07:06:07.815 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+07:06:10.722 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+07:06:10.723 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+07:06:13.781 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 628c2344-05c0-45ff-a537-e6a245d392df, testhub id: rctkglsbh29h9rqyqykrf0doasogsvz8qf2yxzy8
+07:06:13.781 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+07:13:00.137 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+07:13:00.139 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+07:13:00.451 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+07:13:00.452 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+07:13:00.542 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+07:13:00.547 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+07:13:01.321 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to cucumber-testng
+07:13:01.327 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 2a4eaed4-9e60-4645-a297-5b024f25bb26
+07:13:01.327 [main] INFO  c.b.config.BrowserStackConfig - INFO
+07:13:01.342 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+07:13:01.348 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+07:13:03.132 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+07:13:03.166 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=cucumber-testng
+07:13:05.680 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+07:13:06.809 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: aegdfsihipg0h2pytubjqy65hauj5sbuwp86qsf1
+07:13:06.810 [main] INFO  c.b.config.BrowserStackConfig - INFO
+07:13:06.813 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+07:13:07.051 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+07:13:07.052 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+07:13:12.442 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+07:13:37.408 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/aegdfsihipg0h2pytubjqy65hauj5sbuwp86qsf1 to view build report, insights, and many more debugging information all at one place!
+
+07:13:37.409 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+07:13:37.412 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+07:13:40.462 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+07:13:40.462 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+07:13:42.686 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/409143e83b82209b39451464a3d654df589046e8
+07:13:42.686 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+07:13:43.948 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 2a4eaed4-9e60-4645-a297-5b024f25bb26, testhub id: aegdfsihipg0h2pytubjqy65hauj5sbuwp86qsf1
+07:13:43.948 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+07:35:45.155 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+07:35:45.156 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+07:35:45.343 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, cucumber.features=src/test/resources/features/Banking/Web, cucumber.publish.quiet=true, idea.version=2025.1.2, user.dir=E\:\\ZolStaff\\HiQATech\\web-browserstack-tests, localrepository=C\:\\Users\\THEBOLLINGERS\\.m2\\repository}
+07:35:45.343 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+07:35:45.395 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+07:35:45.403 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+07:35:45.655 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to cucumber-testng
+07:35:45.657 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: dd9113f7-4b8f-49db-be95-15f804abd86e
+07:35:45.658 [main] INFO  c.b.config.BrowserStackConfig - INFO
+07:35:45.670 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\THEBOLLINGERS\.browserstack already exist
+07:35:45.674 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+07:35:46.620 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\THEBOLLINGERS\.browserstack\cli\binary-win-x64.exe
+07:35:46.647 [main] INFO  com.browserstack.v2.SdkCLI - Disabling Cli for framework=cucumber-testng
+07:35:49.112 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+07:35:50.184 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: 08qskau4kn8ofog3zku3hxji48relx5dja2q3vec
+07:35:50.185 [main] INFO  c.b.config.BrowserStackConfig - INFO
+07:35:50.188 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+07:35:50.454 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+07:35:50.455 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+07:35:55.680 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+07:36:35.180 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/08qskau4kn8ofog3zku3hxji48relx5dja2q3vec to view build report, insights, and many more debugging information all at one place!
+
+07:36:35.181 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+07:36:35.185 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+07:36:38.269 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+07:36:38.269 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\ZolStaff\HiQATech\web-browserstack-tests\browserstack.yml
+07:36:40.038 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/7acd33fab8f4232dfb405f001cf1437a43e25058
+07:36:40.047 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+07:36:41.199 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: dd9113f7-4b8f-49db-be95-15f804abd86e, testhub id: 08qskau4kn8ofog3zku3hxji48relx5dja2q3vec
+07:36:41.199 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO

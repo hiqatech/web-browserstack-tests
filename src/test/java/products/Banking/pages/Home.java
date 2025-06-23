@@ -1,4 +1,4 @@
-package products.Banking.Pages;
+package products.Banking.pages;
 
 import java.util.HashMap;
 

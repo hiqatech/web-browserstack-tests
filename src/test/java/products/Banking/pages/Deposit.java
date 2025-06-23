@@ -1,4 +1,4 @@
-package products.Banking.Pages;
+package products.Banking.pages;
 
 import java.util.HashMap;
 
@@ -18,6 +18,9 @@ public class Deposit {
         elementLocators.put("deposit_button", "//button[contains(text(),'Deposit')]");
         elementLocators.put("transactions_button", "//button[contains(text(),'Transactions')]");
         elementLocators.put("withdrawl_button", "//button[contains(text(),'Withdrawl')]");
+
+        elementLocators.put("home_button", "//button[text()='Home']");
+        elementLocators.put("logout_button", "//button[text()='Logout']");
         elementLocators.put("", "");
 
     }

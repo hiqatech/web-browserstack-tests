@@ -1,6 +1,6 @@
 userName: techhiqa_05caYU
 accessKey: 3vhMGekFsmxVxeiALezP
-framework: true
+framework: cucumber-testng
 platforms:
   - os: Windows
     osVersion: 10

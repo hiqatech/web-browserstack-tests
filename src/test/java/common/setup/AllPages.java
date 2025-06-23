@@ -1,6 +1,6 @@
 package common.setup;
 
-import products.Banking.Pages.*;
+import products.Banking.pages.*;
 
 public class AllPages {
 

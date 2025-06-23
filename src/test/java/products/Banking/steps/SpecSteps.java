@@ -1,4 +1,4 @@
-package common.stepdefs;
+package products.Banking.steps;
 
 import io.cucumber.java.en.Given;
 import static common.stepdefs.WebSteps.*;
@@ -10,7 +10,7 @@ public class SpecSteps {
     public static void login_with_user(String user){
         IAmOnThePage("Login");
         IActTheElement("select", "customer_login");
-        ISelectTheElementBy("Ron Weasly","value","user_select");
+        ISelectTheElementBy(user,"text","user_select");
         IActTheElement("select", "login_button");
     }
 }

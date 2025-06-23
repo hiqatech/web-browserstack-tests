@@ -14,11 +14,10 @@ import static common.setup.Hooks.VerifyExecutedStep;
 
 public class WebSteps {
 
-    @Given("I setup the {string} product and {string} environment")
-    public static void ISetProductEnv(String product, String environment){
-        System.setProperty("runEnvironment",product);
-        System.setProperty("product",environment);
-        System.setProperty("mainURL", AllURLs.getProductURL());
+    @Given("I setup the {string} product")
+    public static void ISetProductEnv(String product){
+        System.setProperty("product",product);
+        System.setProperty("baseURL", AllURLs.getProductURL());
         AllPages.setAllProductsPageElements();
     }
 
@@ -48,7 +47,7 @@ public class WebSteps {
     @Given("I navigate to the Home page")
     public static void INavigateToTheHomePage(){
     	IStartTheWebDriver();
-        AssertExecutedStep( WebHelp.navigateTo(System.getProperty("mainURL")) + " : " + "I navigate to the " + System.getProperty("mainURL") + " URL");  
+        AssertExecutedStep( WebHelp.navigateTo(System.getProperty("baseURL")) + " : " + "I navigate to the " + System.getProperty("mainURL") + " URL");
         IAmOnThePage("Home");
     }
 
@@ -246,7 +245,7 @@ public class WebSteps {
         AssertExecutedStep( result + " : " + "The " + currentText + " " + attribute + " should be " + text + " in the " + elementName);
     }
 
-    @Given("The {string} element {string} should not {string} {string}")
+    @Given("The {string} element {string} should not be {string}")
     public static void TheElementTextShouldNotBe(String elementName, String attribute, String condition, String text) {
     	attribute = attribute.toUpperCase();
         if (text.contains("Text")) {
@@ -269,17 +268,9 @@ public class WebSteps {
 
         String result = "PASS";
 
-        if (condition.equalsIgnoreCase("EQUAL")) {
-            if (currentText.equalsIgnoreCase(text)) {
+        if (currentText.equalsIgnoreCase(text)) {
 				result = "FAIL";
 			}
-        } else if (condition.equalsIgnoreCase("CONTAIN")) {
-            if (currentText.contains(text)) {
-				result = "FAIL";
-			}
-        } else {
-			AssertExecutedStep( "FAIL" + " : " + "The " + condition + " condition test of element has not been implemented");
-		}
 
         AssertExecutedStep( result + " : " + "The " + currentText + " " + attribute + " should " + condition + " with text " + text + " in the " + elementName);
     }

@@ -27,12 +27,12 @@ public class Hooks {
         this.scenario = scenario;
         LocalDateTime dateTime = LocalDateTime.now();
 
-        System.setProperty("runEnvironment","QA");
+        System.setProperty("environment","QA");
 
         myScenario = scenario.getName();
         System.setProperty("scenario",myScenario);
         System.setProperty("product",myScenario.substring(0,myScenario.indexOf("-")).replace(" ",""));
-        System.setProperty("mainURL", AllURLs.getProductURL());
+        System.setProperty("baseURL", AllURLs.getProductURL());
         System.setProperty("projectPath",System.getProperty("user.dir"));
         System.setProperty("systemTime", dateTime.format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss")));
         System.setProperty("userID",System.getProperty("user.home").replace("C:\\Users\\",""));
@@ -79,7 +79,7 @@ public class Hooks {
         }
         else {
             //Hooks.scenario.log(result.replace(",,,",""));
-            System.out.println(result);
+            //System.out.println(result);
         }
     }
 
@@ -88,7 +88,7 @@ public class Hooks {
         stepLog = result;
         if (!result.toUpperCase().contains("PASS")){
             //Hooks.scenario.log(getResultFailLog(result));
-            System.out.println(result);
+            //System.out.println(result);
         }
     }
 

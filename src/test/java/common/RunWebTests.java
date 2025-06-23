@@ -3,7 +3,7 @@ package common;
 import io.cucumber.testng.*;
 
 @CucumberOptions(
-        glue = "common.stepdefs",
+        glue = {"common.stepdefs","products.Banking.steps"},
         features = "src/test/resources/features/Banking/Web",
         plugin = {
                 "pretty",

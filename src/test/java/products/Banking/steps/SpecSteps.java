@@ -12,5 +12,13 @@ public class SpecSteps {
         IActTheElement("select", "customer_login");
         ISelectTheElementBy(user,"text","user_select");
         IActTheElement("select", "login_button");
+        IAmOnThePage("UserHome");
+    }
+
+    @Given("I navigate to the {string} page")
+    public static void navigate_to_page(String page){
+        IAmOnThePage("UserHome");
+        IActTheElement("select", page + "_button");
+        IAmOnThePage(page);
     }
 }

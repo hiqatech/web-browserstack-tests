@@ -7,9 +7,7 @@ Feature: Banking Web Deposit Tests
     Given I setup the "BankingWeb" product
     And I navigate to the Home page
     And I login with the "Ron Weasly" user
-    And I am on the "UserHome" page
-    And I "click" the "deposit_button"
-    And I am on the "Deposit" page
+    And I navigate to the "Deposit" page
 
   @BankingWebSmoke
   Scenario:BankingWeb - I can deposit 100

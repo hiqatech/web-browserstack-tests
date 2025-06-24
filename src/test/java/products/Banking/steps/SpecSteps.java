@@ -18,7 +18,7 @@ public class SpecSteps {
     @Given("I navigate to the {string} page")
     public static void navigate_to_page(String page){
         IAmOnThePage("UserHome");
-        IActTheElement("select", page + "_button");
+        IActTheElement("select", page.toLowerCase() + "_button");
         IAmOnThePage(page);
     }
 }
